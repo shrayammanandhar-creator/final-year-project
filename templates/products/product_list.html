@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+{% load static %}
+{% load querystring %}
+{% load pricing_tags %}
+
+{% block title %}NepWears | Products{% endblock %}
+
+{% block content %}
+  <div class="row g-4">
+    <div class="col-lg-3 d-none d-lg-block">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Filters</h5>
+          <form method="get" action="{% url 'products:list' %}">
+            <div class="mb-3">
+              <label class="form-label">Search</label>
+              <input class="form-control" name="q" value="{{ request.GET.q }}" placeholder="newar dress, dhaka topi..." />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Gender</label>
+              <div class="d-flex flex-wrap gap-2">
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="gender" value="men" {% if "men" in selected.gender %}checked{% endif %}> Men</label>
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="gender" value="women" {% if "women" in selected.gender %}checked{% endif %}> Women</label>
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="gender" value="kids" {% if "kids" in selected.gender %}checked{% endif %}> Kids</label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Age group</label>
+              <div class="d-flex flex-wrap gap-2">
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="age_group" value="kids" {% if "kids" in selected.age_group %}checked{% endif %}> Kids</label>
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="age_group" value="teen" {% if "teen" in selected.age_group %}checked{% endif %}> Teen</label>
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="age_group" value="adult" {% if "adult" in selected.age_group %}checked{% endif %}> Adult</label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Region</label>
+              <div class="d-flex flex-wrap gap-2">
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="himalayan" {% if "himalayan" in selected.region %}checked{% endif %}> Himalayan</label>
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="hilly" {% if "hilly" in selected.region %}checked{% endif %}> Hilly</label>
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="terai" {% if "terai" in selected.region %}checked{% endif %}> Terai</label>
+                <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="kathmandu-valley" {% if "kathmandu-valley" in selected.region %}checked{% endif %}> Kathmandu Valley</label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Festival</label>
+              <select class="form-select" name="festival">
+                <option value="">Any festival</option>
+                {% for tag in festival_options %}
+                  <option value="{{ tag.slug }}" {% if selected.festival == tag.slug or selected.festival == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+                {% endfor %}
+              </select>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                {% for value,label in festival_quick_filters %}
+                  <a class="btn btn-outline-dark btn-sm" href="{% url 'products:list' %}?festival={{ value|urlencode }}">{{ label }}</a>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Event</label>
+              <select class="form-select" name="event">
+                <option value="">Any event</option>
+                {% for tag in event_options %}
+                  <option value="{{ tag.slug }}" {% if selected.event == tag.slug or selected.event == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+                {% endfor %}
+              </select>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                {% for value,label in event_quick_filters %}
+                  <a class="btn btn-outline-dark btn-sm" href="{% url 'products:list' %}?event={{ value|urlencode }}">{{ label }}</a>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Occasion</label>
+              <select class="form-select" name="occasion">
+                <option value="">Any occasion</option>
+                {% for tag in occasion_options %}
+                  <option value="{{ tag.slug }}" {% if selected.occasion == tag.slug or selected.occasion == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Caste/community</label>
+              <select class="form-select" name="caste">
+                <option value="">Any community</option>
+                {% for tag in caste_options %}
+                  <option value="{{ tag.slug }}" {% if selected.caste == tag.slug or selected.caste == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Price range ({{ currency }})</label>
+              <div class="d-flex gap-2">
+                <input class="form-control" type="number" step="0.01" name="min_price" value="{{ request.GET.min_price }}" placeholder="Min" />
+                <input class="form-control" type="number" step="0.01" name="max_price" value="{{ request.GET.max_price }}" placeholder="Max" />
+              </div>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-warning w-100" type="submit">Apply</button>
+              <a class="btn btn-outline-dark w-100" href="{% url 'products:list' %}">Reset</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-9">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <button class="btn btn-outline-dark d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#nwFilters">
+      Filters
+    </button>
+    <div class="text-muted small">Tip: search "newar dress", "magar", "haku patasi"</div>
+  </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <div>
+          <h3 class="mb-0">Products</h3>
+          {% if request.GET.q %}
+            <div class="text-muted">Search results for "<span class="fw-semibold">{{ request.GET.q }}</span>"</div>
+          {% endif %}
+        </div>
+        <div class="text-muted small">{{ page_obj.paginator.count }} items</div>
+      </div>
+
+      <div class="row g-3">
+        {% for p in products %}
+          <div class="col-6 col-md-4 col-xl-3">
+            <div class="card h-100">
+              {% with img=p.images.first %}
+                {% if img %}
+                  {% if img.image %}
+                    <img class="card-img-top nw-card-img" src="{{ img.image.url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                  {% elif img.source_url %}
+                    <img class="card-img-top nw-card-img" src="{{ img.source_url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                  {% else %}
+                    <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+                  {% endif %}
+                {% else %}
+                  <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+                {% endif %}
+              {% endwith %}
+              <div class="card-body">
+                <div class="fw-semibold">{{ p.name }}</div>
+                <div class="text-muted small">{{ p.type|title }}</div>
+                <div class="mt-2">
+                  {% if p.sale_price_npr %}
+                    <span class="text-muted text-decoration-line-through me-1">{{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}</span>
+                    <span class="fw-bold">{{ currency_symbol }}{{ p.sale_price_npr|price_in:currency }}</span>
+                  {% else %}
+                    <span class="fw-bold">{{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}</span>
+                  {% endif %}
+                </div>
+                {% if p.stock_alert_message %}
+                  <div class="badge text-bg-warning mt-2">{{ p.stock_alert_message }}</div>
+                {% endif %}
+              </div>
+              <div class="card-footer bg-white border-0 d-flex gap-2">
+                <a href="{% url 'products:detail' p.id %}" class="btn btn-sm btn-outline-dark w-100">View</a>
+                <form method="post" action="{% url 'orders:add_to_cart' p.id %}" class="w-100">
+                  {% csrf_token %}
+                  <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                  <button class="btn btn-sm btn-warning w-100" type="submit">Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        {% empty %}
+          <div class="col-12">
+            <div class="alert alert-secondary">No matching products.</div>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if is_paginated %}
+        <nav class="mt-3">
+          <ul class="pagination">
+            {% if page_obj.has_previous %}
+              <li class="page-item"><a class="page-link" href="?{% querystring request.GET 'page' page_obj.previous_page_number %}">Previous</a></li>
+            {% else %}
+              <li class="page-item disabled"><span class="page-link">Previous</span></li>
+            {% endif %}
+
+            <li class="page-item disabled"><span class="page-link">Page {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}</span></li>
+
+            {% if page_obj.has_next %}
+              <li class="page-item"><a class="page-link" href="?{% querystring request.GET 'page' page_obj.next_page_number %}">Next</a></li>
+            {% else %}
+              <li class="page-item disabled"><span class="page-link">Next</span></li>
+            {% endif %}
+          </ul>
+        </nav>
+      {% endif %}
+    </div>  {# col-lg-9 #}
+  </div>    {# row #}
+
+  <!-- Filters (offcanvas on mobile, sidebar on desktop) -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="nwFilters">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Filters</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form id="nwFiltersForm" method="get" action="{% url 'products:list' %}">
+        <div class="mb-3">
+          <label class="form-label">Search</label>
+          <input class="form-control" name="q" value="{{ request.GET.q }}" placeholder="newar dress, dhaka topi..." />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Gender</label>
+          <div class="d-flex flex-wrap gap-2">
+            <label class="btn btn-outline-dark btn-sm">
+              <input class="form-check-input me-1" type="checkbox" name="gender" value="men" {% if "men" in selected.gender %}checked{% endif %}> Men
+            </label>
+            <label class="btn btn-outline-dark btn-sm">
+              <input class="form-check-input me-1" type="checkbox" name="gender" value="women" {% if "women" in selected.gender %}checked{% endif %}> Women
+            </label>
+            <label class="btn btn-outline-dark btn-sm">
+              <input class="form-check-input me-1" type="checkbox" name="gender" value="kids" {% if "kids" in selected.gender %}checked{% endif %}> Kids
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Age group</label>
+          <div class="d-flex flex-wrap gap-2">
+            <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="age_group" value="kids" {% if "kids" in selected.age_group %}checked{% endif %}> Kids</label>
+            <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="age_group" value="teen" {% if "teen" in selected.age_group %}checked{% endif %}> Teen</label>
+            <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="age_group" value="adult" {% if "adult" in selected.age_group %}checked{% endif %}> Adult</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Region</label>
+          <div class="d-flex flex-wrap gap-2">
+            <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="himalayan" {% if "himalayan" in selected.region %}checked{% endif %}> Himalayan</label>
+            <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="hilly" {% if "hilly" in selected.region %}checked{% endif %}> Hilly</label>
+            <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="terai" {% if "terai" in selected.region %}checked{% endif %}> Terai</label>
+            <label class="btn btn-outline-dark btn-sm"><input class="form-check-input me-1" type="checkbox" name="region" value="kathmandu-valley" {% if "kathmandu-valley" in selected.region %}checked{% endif %}> Kathmandu Valley</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Festival</label>
+          <select class="form-select" name="festival">
+            <option value="">Any festival</option>
+            {% for tag in festival_options %}
+              <option value="{{ tag.slug }}" {% if selected.festival == tag.slug or selected.festival == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+            {% endfor %}
+          </select>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            {% for value,label in festival_quick_filters %}
+              <a class="btn btn-outline-dark btn-sm" href="{% url 'products:list' %}?festival={{ value|urlencode }}">{{ label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Event</label>
+          <select class="form-select" name="event">
+            <option value="">Any event</option>
+            {% for tag in event_options %}
+              <option value="{{ tag.slug }}" {% if selected.event == tag.slug or selected.event == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+            {% endfor %}
+          </select>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            {% for value,label in event_quick_filters %}
+              <a class="btn btn-outline-dark btn-sm" href="{% url 'products:list' %}?event={{ value|urlencode }}">{{ label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Occasion</label>
+          <select class="form-select" name="occasion">
+            <option value="">Any occasion</option>
+            {% for tag in occasion_options %}
+              <option value="{{ tag.slug }}" {% if selected.occasion == tag.slug or selected.occasion == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Caste/community</label>
+          <select class="form-select" name="caste">
+            <option value="">Any community</option>
+            {% for tag in caste_options %}
+              <option value="{{ tag.slug }}" {% if selected.caste == tag.slug or selected.caste == tag.name %}selected{% endif %}>{{ tag.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Price range ({{ currency }})</label>
+          <div class="d-flex gap-2">
+            <input class="form-control" type="number" step="0.01" name="min_price" value="{{ request.GET.min_price }}" placeholder="Min" />
+            <input class="form-control" type="number" step="0.01" name="max_price" value="{{ request.GET.max_price }}" placeholder="Max" />
+          </div>
+        </div>
+
+        <div class="d-flex gap-2">
+          <button class="btn btn-warning w-100" type="submit">Apply</button>
+          <a class="btn btn-outline-dark w-100" href="{% url 'products:list' %}">Reset</a>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

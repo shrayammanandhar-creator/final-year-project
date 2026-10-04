@@ -1,0 +1,89 @@
+{
+  "mothers-day": {
+    "gender_scope": "women",
+    "strict_exclusion": true,
+    "primary_age_group": "adult",
+    "confidence": "needs_review",
+    "note": "Mother's Day is used here as a women-focused occasion cue for gifting and celebratory wear. The dataset uses it as a women-oriented styling signal rather than a universally observed ritual.",
+    "sources": [
+      "https://www.timeanddate.com/holidays/usa/mothers-day"
+    ]
+  },
+  "nepali-new-year": {
+    "gender_scope": "unisex",
+    "strict_exclusion": false,
+    "primary_age_group": "all",
+    "confidence": "needs_review",
+    "note": "Nepali New Year is broadly celebrated across communities, but the exact dress varies widely by region and family. The catalog does not assume a single gendered costume.",
+    "sources": []
+  },
+  "prajatantra-diwas": {
+    "gender_scope": "unisex",
+    "strict_exclusion": false,
+    "primary_age_group": "all",
+    "confidence": "needs_review",
+    "note": "This civic occasion is not tied to a single traditional garment, so the catalog treats it as a broad cultural/celebration cue.",
+    "sources": []
+  },
+  "ghode-jatra": {
+    "gender_scope": "mixed",
+    "strict_exclusion": false,
+    "primary_age_group": "all",
+    "confidence": "needs_review",
+    "note": "Ghode Jatra is a public festival with regional costume variation; the dataset keeps it mixed rather than assuming one gendered outfit.",
+    "sources": []
+  },
+  "teej": {
+    "gender_scope": "women",
+    "strict_exclusion": true,
+    "primary_age_group": "adult",
+    "confidence": "verified",
+    "note": "Teej is widely associated with women wearing red traditional attire and festive jewelry in Nepal. The rule is deliberately narrow because it is a women-centered observance.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Teej",
+      "https://www.nepalguides.com/teej-festival-nepal/"
+    ]
+  },
+  "bratabandha": {
+    "gender_scope": "men",
+    "strict_exclusion": true,
+    "primary_age_group": "teen",
+    "confidence": "needs_review",
+    "note": "Bratabandha is commonly linked to boys' initiation rituals and male-coded ceremonial wear, but regional variation and family practice matter. The dataset uses a strict male-only rule for ranking and filtering.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bratabandha"
+    ]
+  },
+  "pasni": {
+    "gender_scope": "mixed",
+    "strict_exclusion": false,
+    "primary_age_group": "kids",
+    "confidence": "needs_review",
+    "note": "Pasni is a family rite that commonly includes distinct boys' and girls' ceremonial wear, so both gendered variants are valid and should not be cross-substituted.",
+    "sources": []
+  },
+  "krishna-janmastami": {
+    "gender_scope": "mixed",
+    "strict_exclusion": false,
+    "primary_age_group": "all",
+    "confidence": "needs_review",
+    "note": "Krishna Janmashtami is often represented with gendered costume variants such as Krishna and Radha, so the catalog treats it as mixed.",
+    "sources": []
+  },
+  "janai-purnima": {
+    "gender_scope": "men",
+    "strict_exclusion": true,
+    "primary_age_group": "teen",
+    "confidence": "needs_review",
+    "note": "Janai Purnima is strongly associated with the sacred thread ceremony for boys and men in many communities, although some families broaden it beyond that.",
+    "sources": []
+  },
+  "maghe-sankranti": {
+    "gender_scope": "mixed",
+    "strict_exclusion": false,
+    "primary_age_group": "all",
+    "confidence": "needs_review",
+    "note": "Maghe Sankranti is celebrated across multiple communities and dress traditions; the catalog keeps it mixed rather than forcing a single gender stereotype.",
+    "sources": []
+  }
+}

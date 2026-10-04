@@ -1,0 +1,122 @@
+{% load static %}
+{% if cart_items %}
+  <div class="card">
+    <div class="table-responsive">
+      <table class="table align-middle mb-0">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th style="width: 160px;">Quantity</th>
+            <th class="text-end">Line total</th>
+            <th style="width: 80px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in cart_items %}
+            {% if row.product %}
+              {% with p=row.product %}
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      {% with img=p.images.first %}
+                        {% if img %}
+                          {% if img.image %}
+                            <img src="{{ img.image.url }}" class="rounded nw-img-thumb" alt="{{ p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                          {% elif img.source_url %}
+                            <img src="{{ img.source_url }}" class="rounded nw-img-thumb" alt="{{ p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                          {% else %}
+                            <img src="{% static 'img/product-placeholder.svg' %}" class="rounded nw-img-thumb" alt="{{ p.name }}">
+                          {% endif %}
+                        {% else %}
+                          <img src="{% static 'img/product-placeholder.svg' %}" class="rounded nw-img-thumb" alt="{{ p.name }}">
+                        {% endif %}
+                      {% endwith %}
+                      <div>
+                        <div class="fw-semibold"><a class="text-decoration-none text-dark" href="{% url 'products:detail' p.id %}">{{ p.name }}</a></div>
+                        <div class="text-muted small">{{ p.type|title }}</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <form method="post" action="{% url 'orders:update_cart_item' p.id %}" class="d-flex gap-2 align-items-center">
+                      {% csrf_token %}
+                      <button class="btn btn-sm btn-outline-dark nw-qty-btn" type="button" data-nw-qty-delta="-1">−</button>
+                      <input class="form-control form-control-sm text-center" style="width:64px" type="number" name="quantity" value="{{ row.quantity|default:row.quantity }}" min="0" max="99" inputmode="numeric">
+                      <button class="btn btn-sm btn-outline-dark nw-qty-btn" type="button" data-nw-qty-delta="1">+</button>
+                      <button class="btn btn-sm btn-warning" type="submit">Save</button>
+                    </form>
+                  </td>
+                  <td class="text-end fw-semibold">
+                    {{ currency_symbol }}{{ row.line_total|default:row.line_total }}
+                  </td>
+                  <td class="text-end">
+                    <form method="post" action="{% url 'orders:update_cart_item' p.id %}">
+                      {% csrf_token %}
+                      <input type="hidden" name="quantity" value="0">
+                      <button class="btn btn-sm btn-outline-danger" type="submit">Remove</button>
+                    </form>
+                  </td>
+                </tr>
+              {% endwith %}
+            {% else %}
+              {# Authenticated rows are OrderItem objects #}
+              {% with p=row.product %}
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      {% with img=p.images.first %}
+                        {% if img %}
+                          {% if img.image %}
+                            <img src="{{ img.image.url }}" class="rounded nw-img-thumb" alt="{{ p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                          {% elif img.source_url %}
+                            <img src="{{ img.source_url }}" class="rounded nw-img-thumb" alt="{{ p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                          {% else %}
+                            <img src="{% static 'img/product-placeholder.svg' %}" class="rounded nw-img-thumb" alt="{{ p.name }}">
+                          {% endif %}
+                        {% else %}
+                          <img src="{% static 'img/product-placeholder.svg' %}" class="rounded nw-img-thumb" alt="{{ p.name }}">
+                        {% endif %}
+                      {% endwith %}
+                      <div>
+                        <div class="fw-semibold"><a class="text-decoration-none text-dark" href="{% url 'products:detail' p.id %}">{{ p.name }}</a></div>
+                        <div class="text-muted small">{{ p.type|title }}</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <form method="post" action="{% url 'orders:update_cart_item' p.id %}" class="d-flex gap-2 align-items-center">
+                      {% csrf_token %}
+                      <button class="btn btn-sm btn-outline-dark nw-qty-btn" type="button" data-nw-qty-delta="-1">−</button>
+                      <input class="form-control form-control-sm text-center" style="width:64px" type="number" name="quantity" value="{{ row.quantity }}" min="0" max="99" inputmode="numeric">
+                      <button class="btn btn-sm btn-outline-dark nw-qty-btn" type="button" data-nw-qty-delta="1">+</button>
+                      <button class="btn btn-sm btn-warning" type="submit">Save</button>
+                    </form>
+                  </td>
+                  <td class="text-end fw-semibold">
+                    {{ currency_symbol }}{{ row.line_total }}
+                  </td>
+                  <td class="text-end">
+                    <form method="post" action="{% url 'orders:update_cart_item' p.id %}">
+                      {% csrf_token %}
+                      <input type="hidden" name="quantity" value="0">
+                      <button class="btn btn-sm btn-outline-danger" type="submit">Remove</button>
+                    </form>
+                  </td>
+                </tr>
+              {% endwith %}
+            {% endif %}
+          {% endfor %}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2" class="text-end fw-semibold">Total</td>
+            <td class="text-end fw-bold">{{ currency_symbol }}{{ total }}</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+{% else %}
+  <div class="alert alert-secondary">Your cart is empty.</div>
+{% endif %}

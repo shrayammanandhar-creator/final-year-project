@@ -1,0 +1,395 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}NepWears{% endblock %}</title>
+    <link rel="icon" type="image/svg+xml" href="{% static 'img/favicon.svg' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/nw.css' %}?v=auth-fix-1" rel="stylesheet">
+    {% block head %}{% endblock %}
+  </head>
+  <body class="nw-watermark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="{% url 'products:home' %}">
+          <img class="nw-brand-mark" src="{% static 'img/favicon.svg' %}" alt="" aria-hidden="true">
+          <span>NepWears</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nwNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nwNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item"><a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'products:home' %}">Home</a></li>
+            <li class="nav-item"><a class="nav-link {% if 'products' in request.path and request.GET.gender == 'men' %}active{% endif %}" href="{% url 'products:list' %}?gender=men">Men</a></li>
+            <li class="nav-item"><a class="nav-link {% if 'products' in request.path and request.GET.gender == 'women' %}active{% endif %}" href="{% url 'products:list' %}?gender=women">Women</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'products:home' %}#contact">Contact</a></li>
+          </ul>
+
+          <form class="d-flex me-3 gap-2" role="search" action="{% url 'products:list' %}" method="get" autocomplete="off">
+            <input class="form-control" style="min-width: 260px;" list="nw-suggestions" id="nw-search" name="q" placeholder="Search Daura, Saree, Dhaka Topi..." />
+            <datalist id="nw-suggestions"></datalist>
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+
+          <button id="nwCartButton" class="btn btn-outline-warning me-2 px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#nwCartCanvas" aria-controls="nwCartCanvas">
+            Cart{% if nw_cart_count %} ({{ nw_cart_count }}){% endif %}
+          </button>
+          {% if user.is_authenticated %}
+            <a class="btn btn-outline-light me-2 px-3" href="{% url 'users:dashboard' %}">Account</a>
+            <form method="post" action="{% url 'users:logout' %}" class="d-inline">
+              {% csrf_token %}
+              <button class="btn btn-outline-light px-3" type="submit">Sign Out</button>
+            </form>
+          {% else %}
+            <button class="btn btn-warning px-3" type="button" data-bs-toggle="modal" data-bs-target="#nwLoginModal">Sign In</button>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+
+    <div class="nw-blur nw-page-body">
+      <div class="container mt-3 nw-main">
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">{% if message.tags %}{% endif %}{{ message }}</div>
+      {% endfor %}
+
+      {% block content %}{% endblock %}
+      </div>
+
+      <footer id="contact" class="py-5 nw-footer nw-footer-sticky">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="fw-bold">NepWears</div>
+              <div class="nw-footer-muted">Traditional Nepali wear for Nepali people living abroad.</div>
+            </div>
+            <div class="col-md-6">
+              <div class="fw-semibold mb-2">Contact</div>
+              <div><strong>Email:</strong> nep_wears@gmail.com</div>
+              <div><strong>Instagram:</strong> @nepwears</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="nwCartCanvas" aria-labelledby="nwCartCanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="nwCartCanvasLabel">Shopping cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        {% include "orders/partials/cart_offcanvas.html" %}
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="nwLoginModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div id="nwLoginInlineError" class="alert alert-danger d-none mb-3">
+              {{ request.session.nw_login_error|default:"Invalid username or password." }}
+            </div>
+            <div id="nwLoginInlineSuccess" class="alert alert-success d-none mb-3">
+              Account created. Please sign in.
+            </div>
+            <form method="post" action="{% url 'users:login' %}">
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{ request.get_full_path }}">
+              <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input class="form-control" name="username" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input class="form-control" type="password" name="password" required>
+              </div>
+              <button class="btn btn-warning w-100" type="submit">Sign In</button>
+            </form>
+            <div class="text-muted small mt-3">
+              No account?
+              <button class="btn btn-link p-0 align-baseline" type="button" data-nw-auth-switch="#nwSignupModal">Create one</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="nwSignupModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create Account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div id="nwSignupInlineError" class="alert alert-danger d-none mb-3">
+              {{ request.session.nw_signup_error|default:"Please fix the signup form and try again." }}
+            </div>
+            <form method="post" action="{% url 'users:signup' %}">
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{ request.get_full_path }}">
+              <div class="mb-2">
+                <label class="form-label">Username</label>
+                <input class="form-control" name="username" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Name</label>
+                <input class="form-control" name="first_name" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Currency preference</label>
+                <select class="form-select" name="preferred_currency" required>
+                  <option value="NPR">NPR (₨)</option>
+                  <option value="USD">USD ($)</option>
+                  <option value="EUR">EUR (€)</option>
+                </select>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Gender</label>
+                <select class="form-select" name="gender">
+                  <option value="">Prefer not to say</option>
+                  <option value="men">Men</option>
+                  <option value="women">Women</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Age</label>
+                <input class="form-range" type="range" name="age" min="5" max="100" value="25" oninput="document.getElementById('nwAgeVal').innerText=this.value">
+                <div class="text-muted small">Selected: <span id="nwAgeVal">25</span></div>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Password</label>
+                <input class="form-control" type="password" name="password1" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Confirm password</label>
+                <input class="form-control" type="password" name="password2" required>
+              </div>
+              <button class="btn btn-warning w-100" type="submit">Sign Up</button>
+            </form>
+            <div class="text-muted small mt-3">
+              Already have an account?
+              <button class="btn btn-link p-0 align-baseline" type="button" data-nw-auth-switch="#nwLoginModal">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        const input = document.getElementById("nw-search");
+        const list = document.getElementById("nw-suggestions");
+        if (!input || !list) return;
+
+        let controller = null;
+        input.addEventListener("input", async () => {
+          const q = input.value.trim();
+          if (q.length < 2) {
+            list.innerHTML = "";
+            return;
+          }
+          if (controller) controller.abort();
+          controller = new AbortController();
+          try {
+            const res = await fetch("{% url 'products:search_suggestions' %}?q=" + encodeURIComponent(q), {signal: controller.signal});
+            const data = await res.json();
+            list.innerHTML = (data.suggestions || []).map(s => `<option value="${s}"></option>`).join("");
+          } catch (e) {}
+        });
+      })();
+    </script>
+    <script>
+      (function () {
+        const authModalIds = ["nwLoginModal", "nwSignupModal"];
+
+        function updateAuthBlur() {
+          const open = authModalIds.some(id => {
+            const el = document.getElementById(id);
+            return el && el.classList.contains("show");
+          });
+          document.body.classList.toggle("nw-auth-open", open);
+        }
+
+        authModalIds.forEach(id => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          el.addEventListener("shown.bs.modal", updateAuthBlur);
+          el.addEventListener("hidden.bs.modal", () => setTimeout(updateAuthBlur, 0));
+        });
+
+        document.addEventListener("click", (e) => {
+          const btn = e.target.closest("[data-nw-auth-switch]");
+          if (!btn) return;
+          e.preventDefault();
+          const targetSelector = btn.getAttribute("data-nw-auth-switch");
+          const target = document.querySelector(targetSelector);
+          const current = btn.closest(".modal");
+          if (!target) return;
+
+          const showTarget = () => bootstrap.Modal.getOrCreateInstance(target).show();
+          if (current && current !== target) {
+            current.addEventListener("hidden.bs.modal", showTarget, { once: true });
+            bootstrap.Modal.getOrCreateInstance(current).hide();
+          } else {
+            showTarget();
+          }
+        });
+
+        const params = new URLSearchParams(window.location.search);
+        const auth = params.get("auth");
+        if (!auth) return;
+        const id = auth === "signup" ? "nwSignupModal" : auth === "login" ? "nwLoginModal" : null;
+        if (!id) return;
+        const el = document.getElementById(id);
+        if (!el) return;
+        const modal = new bootstrap.Modal(el);
+        modal.show();
+
+        if (auth === "login") {
+          const loginErr = params.get("login_error");
+          const box = document.getElementById("nwLoginInlineError");
+          const ok = document.getElementById("nwLoginInlineSuccess");
+          const created = params.get("signup_success");
+          if (box) {
+            if (loginErr) box.classList.remove("d-none");
+            else box.classList.add("d-none");
+          }
+          if (ok) {
+            if (created) ok.classList.remove("d-none");
+            else ok.classList.add("d-none");
+          }
+        }
+        if (auth === "signup") {
+          const signupErr = params.get("signup_error");
+          const box = document.getElementById("nwSignupInlineError");
+          if (box) {
+            if (signupErr) box.classList.remove("d-none");
+            else box.classList.add("d-none");
+          }
+        }
+      })();
+    </script>
+    <script>
+      // Smooth anchor navigation with sticky navbar offset
+      (function () {
+        function scrollToHash(hash) {
+          if (!hash) return;
+          const el = document.querySelector(hash);
+          if (!el) return;
+          const nav = document.querySelector(".navbar");
+          const offset = nav ? nav.offsetHeight + 12 : 0;
+          const top = el.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+
+        document.addEventListener("click", (e) => {
+          const a = e.target.closest("a[href^='#']");
+          if (!a) return;
+          const hash = a.getAttribute("href");
+          if (!hash || hash.length < 2) return;
+          e.preventDefault();
+          history.pushState(null, "", hash);
+          scrollToHash(hash);
+        });
+
+        if (window.location.hash) {
+          setTimeout(() => scrollToHash(window.location.hash), 50);
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        const el = document.getElementById("nwCartCanvas");
+        if (!el) return;
+        el.addEventListener("shown.bs.offcanvas", () => document.body.classList.add("nw-cart-open"));
+        el.addEventListener("hidden.bs.offcanvas", () => document.body.classList.remove("nw-cart-open"));
+      })();
+    </script>
+    <script>
+      (function () {
+        const canvas = document.getElementById("nwCartCanvas");
+        if (!canvas) return;
+        const body = canvas.querySelector(".offcanvas-body");
+        const button = document.getElementById("nwCartButton");
+
+        function getCookie(name) {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(";").shift();
+          return "";
+        }
+
+        async function refreshCart() {
+          const res = await fetch("{% url 'orders:cart_offcanvas_fragment' %}", { headers: { "X-Requested-With": "XMLHttpRequest" } });
+          const html = await res.text();
+          body.innerHTML = html;
+          // Update button count from refreshed markup (best-effort)
+          const m = body.textContent.match(/(\d+)\s+items/);
+          if (button) {
+            if (m && m[1]) button.textContent = `Cart (${m[1]})`;
+            else button.textContent = "Cart";
+          }
+        }
+
+        canvas.addEventListener("submit", async (e) => {
+          const form = e.target.closest("form[data-nw-cart-ajax='1']");
+          if (!form) return;
+          e.preventDefault();
+          const csrf = getCookie("csrftoken");
+          const fd = new FormData(form);
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: fd,
+            headers: {
+              "X-Requested-With": "XMLHttpRequest",
+              ...(csrf ? { "X-CSRFToken": csrf } : {}),
+            },
+          });
+          const html = await res.text();
+          body.innerHTML = html;
+          const m = body.textContent.match(/(\d+)\s+items/);
+          if (button) {
+            if (m && m[1]) button.textContent = `Cart (${m[1]})`;
+            else button.textContent = "Cart";
+          }
+        });
+
+        canvas.addEventListener("shown.bs.offcanvas", () => {
+          refreshCart().catch(() => {});
+        });
+
+        canvas.addEventListener("click", (e) => {
+          const btn = e.target.closest("button[data-nw-qty-delta]");
+          if (!btn) return;
+          const form = btn.closest("form");
+          if (!form) return;
+          const input = form.querySelector("input[name='quantity']");
+          if (!input) return;
+          const delta = parseInt(btn.getAttribute("data-nw-qty-delta") || "0", 10);
+          const current = parseInt(input.value || "0", 10);
+          const next = Math.max(0, Math.min(99, current + delta));
+          input.value = String(next);
+          // If 0, let the existing remove button handle UX; otherwise save immediately.
+          if (next === 0) return;
+          const submit = form.querySelector("button[type='submit']");
+          if (submit) submit.click();
+        });
+      })();
+    </script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

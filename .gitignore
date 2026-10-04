@@ -1,0 +1,23 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+.python-portable/
+
+# Django local state and logs
+db.sqlite3
+*.log
+
+# Downloaded or packaged runtime files
+*.zip
+*.nupkg
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

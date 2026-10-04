@@ -1,0 +1,295 @@
+[
+  {
+    "name": "Nepali New Year",
+    "kind": "festival",
+    "date_ad": "2026-04-14",
+    "tag_slug": "nepali-new-year",
+    "discount_percent": 20,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bisket-Jatra.jpg",
+    "source": "https://english.hamropatro.com/date/2083-1-1"
+  },
+  {
+    "name": "Mother's Day",
+    "kind": "occasion",
+    "date_ad": "2026-04-17",
+    "tag_slug": "mothers-day",
+    "discount_percent": 15,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mother%20and%20child%20%28Te%20Papa%2C%201983-0069-1%29.jpg",
+    "source": "https://english.hamropatro.com/date/2083-1-4"
+  },
+  {
+    "name": "Buddha Jayanti",
+    "kind": "festival",
+    "date_ad": "2026-05-01",
+    "tag_slug": "buddha-jayanti",
+    "discount_percent": 10,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Gautam_Buddha.JPG",
+    "source": "https://english.hamropatro.com/date/2083-1-18"
+  },
+  {
+    "name": "Ubhauli Parwa",
+    "kind": "festival",
+    "date_ad": "2026-05-01",
+    "tag_slug": "ubhauli-parwa",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirat%20Rai%20ethnic%20womens%20in%20Sakela%20Ubhauli%20festival.jpg",
+    "source": "https://english.hamropatro.com/date/2083-1-18",
+    "discount_percent": 10
+  },
+  {
+    "name": "Janai Purnima",
+    "kind": "occasion",
+    "date_ad": "2026-08-28",
+    "tag_slug": "janai-purnima",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20sister%20tying%20rakhi%20thread%20on%20the%20wrist%20of%20a%20brother%20on%20Hindu%20festival%20of%20Raksha%20Bandhan.jpg",
+    "source": "https://nepalicalendar.rat32.com/2083/bhadra"
+  },
+  {
+    "name": "Gai Jatra",
+    "kind": "occasion",
+    "date_ad": "2026-08-29",
+    "tag_slug": "gai-jatra",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Floats%20Gai%20Jatra.jpg",
+    "source": "https://english.hamropatro.com/date/2083-5-13"
+  },
+  {
+    "name": "Teej",
+    "kind": "occasion",
+    "date_ad": "2026-09-03",
+    "tag_slug": "teej",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teej.jpg",
+    "source": "https://english.hamropatro.com/date/2083-5-17"
+  },
+  {
+    "name": "Krishna Janmashtami",
+    "kind": "occasion",
+    "date_ad": "2026-09-04",
+    "tag_slug": "krishna-janmastami",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krishna%20Janmashtami.jpg",
+    "source": "https://english.hamropatro.com/date/2083-5-19"
+  },
+  {
+    "name": "Indra Jatra",
+    "kind": "occasion",
+    "date_ad": "2026-09-11",
+    "tag_slug": "indra-jatra",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kumari%20Ghar.jpg",
+    "source": "https://nepalipatro.com.np/blog/en/indra-jatra-2/indra-jatra-eng/"
+  },
+  {
+    "name": "Dashain — Ghatasthapana",
+    "kind": "festival",
+    "date_ad": "2026-10-11",
+    "tag_slug": "dashain-ghatasthapana",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamara.jpg",
+    "source": "https://www.drikpanchang.com/nepali/dashain/dashain-calendar.html?year=2083"
+  },
+  {
+    "name": "Dashain — Phulpati",
+    "kind": "festival",
+    "date_ad": "2026-10-17",
+    "tag_slug": "dashain-phulpati",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamara.jpg",
+    "source": "https://www.drikpanchang.com/nepali/dashain/dashain-calendar.html?year=2083"
+  },
+  {
+    "name": "Dashain — Maha Ashtami",
+    "kind": "festival",
+    "date_ad": "2026-10-18",
+    "tag_slug": "dashain-maha-ashtami",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamara.jpg",
+    "source": "https://www.drikpanchang.com/nepali/dashain/dashain-calendar.html?year=2083"
+  },
+  {
+    "name": "Dashain — Maha Navami",
+    "kind": "festival",
+    "date_ad": "2026-10-20",
+    "tag_slug": "dashain-maha-navami",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamara.jpg",
+    "source": "https://www.drikpanchang.com/nepali/dashain/dashain-calendar.html?year=2083"
+  },
+  {
+    "name": "Dashain — Vijaya Dashami",
+    "kind": "festival",
+    "date_ad": "2026-10-21",
+    "tag_slug": "dashain-vijaya-dashami",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamara.jpg",
+    "source": "https://www.drikpanchang.com/nepali/dashain/dashain-calendar.html?year=2083"
+  },
+  {
+    "name": "Dashain — Kojagrat Purnima",
+    "kind": "festival",
+    "date_ad": "2026-10-25",
+    "tag_slug": "dashain-kojagrat-purnima",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamara.jpg",
+    "source": "https://www.drikpanchang.com/nepali/dashain/dashain-calendar.html?year=2083"
+  },
+  {
+    "name": "Halloween",
+    "kind": "occasion",
+    "date_ad": "2026-10-31",
+    "tag_slug": "halloween",
+    "discount_percent": 12,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pumpkin.Halloween.jpg",
+    "source": "https://www.calendardate.com/halloween_2026.htm"
+  },
+  {
+    "name": "Tihar — Kaag Tihar",
+    "kind": "festival",
+    "date_ad": "2026-11-07",
+    "tag_slug": "tihar-kaag-tihar",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diya%20lamp.jpg",
+    "source": "https://www.drikpanchang.com/nepali/tihar/tihar-calendar.html?year=2083"
+  },
+  {
+    "name": "Tihar — Kukur Tihar",
+    "kind": "festival",
+    "date_ad": "2026-11-08",
+    "tag_slug": "tihar-kukur-tihar",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diya%20lamp.jpg",
+    "source": "https://www.drikpanchang.com/nepali/tihar/tihar-calendar.html?year=2083"
+  },
+  {
+    "name": "Tihar — Laxmi Puja",
+    "kind": "festival",
+    "date_ad": "2026-11-08",
+    "tag_slug": "tihar-laxmi-puja",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diya%20lamp.jpg",
+    "source": "https://www.drikpanchang.com/nepali/tihar/tihar-calendar.html?year=2083"
+  },
+  {
+    "name": "Tihar — Gai Tihar",
+    "kind": "festival",
+    "date_ad": "2026-11-09",
+    "tag_slug": "tihar-gai-tihar",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diya%20lamp.jpg",
+    "source": "https://www.drikpanchang.com/nepali/tihar/tihar-calendar.html?year=2083"
+  },
+  {
+    "name": "Tihar — Govardhan Puja / Mha Puja",
+    "kind": "festival",
+    "date_ad": "2026-11-10",
+    "tag_slug": "tihar-mha-puja",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diya%20lamp.jpg",
+    "source": "https://www.drikpanchang.com/nepali/tihar/tihar-calendar.html?year=2083"
+  },
+  {
+    "name": "Tihar — Bhai Tika",
+    "kind": "festival",
+    "date_ad": "2026-11-11",
+    "tag_slug": "tihar-bhai-tika",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diya%20lamp.jpg",
+    "source": "https://www.drikpanchang.com/nepali/tihar/tihar-calendar.html?year=2083"
+  },
+  {
+    "name": "Chhath Parwa",
+    "kind": "festival",
+    "date_ad": "2026-11-15",
+    "tag_slug": "chaath-parwa",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chhath-Puja.jpg",
+    "source": "https://english.hamropatro.com/date/2083-7-29"
+  },
+  {
+    "name": "Udhauli Parwa",
+    "kind": "festival",
+    "date_ad": "2026-12-04",
+    "tag_slug": "udhauli-parwa",
+    "discount_percent": 10,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirat%20Rai%20ethnic%20womens%20in%20Sakela%20Ubhauli%20festival.jpg",
+    "source": "https://english.hamropatro.com/date/2083-8-18"
+  },
+  {
+    "name": "Yomari Punhe (Yomari Punhi)",
+    "kind": "festival",
+    "date_ad": "2026-12-25",
+    "tag_slug": "yomari-punhe",
+    "discount_percent": 18,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yomari%20Punhi.jpg",
+    "source": "https://english.hamropatro.com/date-converter"
+  },
+  {
+    "name": "Christmas",
+    "kind": "festival",
+    "date_ad": "2026-12-25",
+    "tag_slug": "christmas",
+    "discount_percent": 25,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Christmas%20tree.jpg",
+    "source": "https://www.timeanddate.com/holidays/nepal/christmas-day"
+  },
+  {
+    "name": "Tamu Lhosar",
+    "kind": "festival",
+    "date_ad": "2026-12-31",
+    "tag_slug": "tamu-lhosar",
+    "discount_percent": 14,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gurung%20Tamu%20Lhosar%202018%2005.jpg",
+    "source": "https://www.timeanddate.com/holidays/nepal/tamu-lhosar"
+  },
+  {
+    "name": "Maghe Sankranti",
+    "kind": "festival",
+    "date_ad": "2027-01-15",
+    "tag_slug": "maghe-sankranti",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20dress%20of%20woman%20Rana%20Tharu%20cast%20of%20Nepal.%28%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A4%BE_%E0%A4%A5%E0%A4%BE%E0%A4%B0%E0%A5%81%E0%A4%95%E0%A5%8B_%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8B_%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B0%E0%A4%A8.jpg",
+    "source": "https://nepalicalendar.rat32.com/2083/magh"
+  },
+  {
+    "name": "Sonam Lhosar",
+    "kind": "festival",
+    "date_ad": "2027-02-06",
+    "tag_slug": "sonam-lhosar",
+    "discount_percent": 12,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sonam%20Lhosar%20Portrait.jpg",
+    "source": "https://www.hamropatro.com/posts/articles-events-v2/articles-events-v2-english-sonam-lhochhar"
+  },
+  {
+    "name": "Prajatantra Diwas",
+    "kind": "occasion",
+    "date_ad": "2027-02-18",
+    "source": "https://english.hamropatro.com/date/2083-11-7",
+    "tag_slug": "prajatantra-diwas"
+  },
+  {
+    "name": "Fagu Purnima (Pahad)",
+    "kind": "festival",
+    "date_ad": "2027-03-03",
+    "tag_slug": "fagu-purnima-pahad",
+    "discount_percent": 20,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Holi%20Colors.jpg",
+    "source": "https://english.hamropatro.com/date/2083-10-30"
+  },
+  {
+    "name": "Shivaratri (Maha Shivaratri)",
+    "kind": "festival",
+    "date_ad": "2027-03-06",
+    "tag_slug": "shivaratri",
+    "discount_percent": 10,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shiva%20linga.jpg",
+    "source": "https://english.hamropatro.com/date/2083-11-22"
+  },
+  {
+    "name": "Gyalpo Lhosar",
+    "kind": "festival",
+    "date_ad": "2027-03-09",
+    "source": "https://www.hamropatro.com/posts/articles-chadparwa-ra-Dinbishesh/articles-chadparwa-ra-Dinbishesh-english-gyalpo-lhosar",
+    "tag_slug": "gyalpo-lhosar",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Getting%20ready%20for%20Losar.jpg",
+    "discount_percent": 12
+  },
+  {
+    "name": "Fagu Purnima (Terai)",
+    "kind": "festival",
+    "date_ad": "2027-03-23",
+    "tag_slug": "fagu-purnima-terai",
+    "discount_percent": 20,
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Holi%20Colors.jpg",
+    "source": "https://www.hamropatro.com/posts/articles-Bishesh-Dinharu/articles-Bishesh-Dinharu-english-tarai-holi"
+  },
+  {
+    "name": "Ghode Jatra",
+    "kind": "occasion",
+    "date_ad": "2027-04-03",
+    "source": "https://english.hamropatro.com/calendar/2083/12",
+    "tag_slug": "ghode-jatra",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghode%20Jatra.jpg"
+  }
+]

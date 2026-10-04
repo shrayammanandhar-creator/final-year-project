@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NepWears">
+  <rect width="64" height="64" rx="14" fill="#ffcc33"/>
+  <path d="M14 35c6-13 15-20 27-21 5 6 8 13 9 21-11 4-24 4-36 0z" fill="#0b0f19"/>
+  <path d="M20 34c8 3 17 3 28 0" fill="none" stroke="#fff7d1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="41" cy="18" r="4" fill="#d71920"/>
+</svg>

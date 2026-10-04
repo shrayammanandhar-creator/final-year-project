@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% load static %}
+{% load pricing_tags %}
+
+{% block title %}NepWears | Dashboard{% endblock %}
+
+{% block content %}
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="mb-0">Your dashboard</h3>
+    <a class="btn btn-outline-dark" href="{% url 'products:list' %}">Browse products</a>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="fw-semibold mb-2">Profile</div>
+          <div class="text-muted small mb-3">Used for pricing and recommendations.</div>
+          <form method="post">
+            {% csrf_token %}
+            <label class="form-label">Preferred currency</label>
+            <select class="form-select mb-3" name="preferred_currency">
+              {% for code,label in currencies %}
+                <option value="{{ code }}" {% if user.preferred_currency == code %}selected{% endif %}>{{ label }}</option>
+              {% endfor %}
+            </select>
+            <button class="btn btn-warning w-100" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <div class="fw-semibold mb-2">Cart & Orders</div>
+          <div class="text-muted small mb-3">Your cart, checkout status, and purchase history.</div>
+
+          <div class="mb-3">
+            <div class="fw-semibold">Current cart</div>
+            {% if cart_order and cart_order.items.all %}
+              <div class="text-muted small mb-2">{{ cart_order.items.count }} items • {{ cart_order.currency }} {{ cart_order.total_price }}</div>
+              <div class="vstack gap-2 mb-2">
+                {% for it in cart_order.items.all|slice:":4" %}
+                  <div class="d-flex justify-content-between small">
+                    <span>{{ it.quantity }}x {{ it.product.name }}</span>
+                    <span>{{ cart_order.currency }} {{ it.line_total }}</span>
+                  </div>
+                {% endfor %}
+              </div>
+              <a class="btn btn-sm btn-outline-dark w-100" href="{% url 'orders:cart' %}">View cart</a>
+            {% else %}
+              <div class="text-muted small">Your cart is empty.</div>
+            {% endif %}
+          </div>
+
+          <div>
+            <div class="fw-semibold">Order history</div>
+            {% if orders %}
+              <div class="vstack gap-2 mt-2">
+                {% for o in orders %}
+                  <div class="border rounded-3 p-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="fw-semibold">Order #{{ o.id }}</div>
+                      <span class="badge text-bg-dark text-uppercase">{{ o.status }}</span>
+                    </div>
+                    <div class="text-muted small">
+                      {% if o.order_date %}{{ o.order_date|date:"M d, Y" }}{% else %}{{ o.created_at|date:"M d, Y" }}{% endif %}
+                      • {{ o.currency }} {{ o.total_price }}
+                    </div>
+                    <div class="text-muted small mt-1">
+                      {% for it in o.items.all|slice:":3" %}
+                        {{ it.quantity }}× {{ it.product.name }}{% if not forloop.last %}, {% endif %}
+                      {% endfor %}
+                      {% if o.items.count > 3 %}…{% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% else %}
+              <div class="text-muted small mt-2">No past orders yet.</div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <div>
+          <div class="fw-semibold">Wishlist</div>
+          <div class="text-muted small">Save items and come back later.</div>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        {% for item in wishlist %}
+          {% with p=item.product %}
+            <div class="col-6 col-md-4">
+              <div class="card h-100">
+                {% with img=p.images.first %}
+                  {% if img %}
+                    {% if img.image %}
+                      <img class="card-img-top nw-card-img" src="{{ img.image.url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                    {% elif img.source_url %}
+                      <img class="card-img-top nw-card-img" src="{{ img.source_url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                    {% else %}
+                      <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+                    {% endif %}
+                  {% else %}
+                    <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+                  {% endif %}
+                {% endwith %}
+                <div class="card-body">
+                  <div class="fw-semibold">{{ p.name }}</div>
+                  <div class="fw-bold mt-2">{{ user.preferred_currency }} {{ p.base_price_npr|price_in:user.preferred_currency }}</div>
+                </div>
+                <div class="card-footer bg-white border-0 d-flex gap-2">
+                  <a class="btn btn-sm btn-outline-dark w-100" href="{% url 'products:detail' p.id %}">View</a>
+                  <form method="post" action="{% url 'users:wishlist_remove' p.id %}" class="w-100">
+                    {% csrf_token %}
+                    <button class="btn btn-sm btn-outline-danger w-100" type="submit">Remove</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          {% endwith %}
+        {% empty %}
+          <div class="col-12">
+            <div class="alert alert-secondary">No wishlist items yet.</div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <hr class="my-4">
+
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <div>
+          <div class="fw-semibold">Recommended from your activity</div>
+          <div class="text-muted small">Uses your wishlist, cart, views, and purchase history.</div>
+        </div>
+      </div>
+
+      <div class="row g-3 mb-4">
+        {% for p in recommended %}
+          <div class="col-6 col-md-4">
+            <div class="card h-100">
+              {% with img=p.images.first %}
+                {% if img %}
+                  {% if img.image %}
+                    <img class="card-img-top nw-card-img" src="{{ img.image.url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                  {% elif img.source_url %}
+                    <img class="card-img-top nw-card-img" src="{{ img.source_url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                  {% else %}
+                    <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+                  {% endif %}
+                {% else %}
+                  <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+                {% endif %}
+              {% endwith %}
+              <div class="card-body">
+                <div class="fw-semibold">{{ p.name }}</div>
+                <div class="fw-bold mt-2">{{ user.preferred_currency }} {{ p.base_price_npr|price_in:user.preferred_currency }}</div>
+                {% if p.recommendation_reason %}
+                  <div class="badge text-bg-light border mt-2">{{ p.recommendation_reason }}</div>
+                {% endif %}
+              </div>
+              <div class="card-footer bg-white border-0 d-flex gap-2">
+                <a class="btn btn-sm btn-outline-dark w-100" href="{% url 'products:detail' p.id %}">View</a>
+                <form method="post" action="{% url 'orders:add_to_cart' p.id %}" class="w-100">
+                  {% csrf_token %}
+                  <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                  <button class="btn btn-sm btn-warning w-100" type="submit">Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        {% empty %}
+          <div class="col-12">
+            <div class="alert alert-secondary">Recommendations will improve as you view, wishlist, cart, and buy products.</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,356 @@
+[
+  {
+    "name": "Nepali National Dress Essentials (Men)",
+    "product_names": [
+      "Daura Suruwal Classic Set",
+      "Dhaka Topi",
+      "Bhadgaunle Topi",
+      "Shawl",
+      "Waistcoat",
+      "Cotton Kurta Suruwal Set"
+    ],
+    "strength": 0.9,
+    "reason": "Daura Suruwal is commonly paired with a topi (Dhaka/Bhadgaunle) and often with a waistcoat/shawl for formal occasions.",
+    "source_urls": [
+      "http://ecs.com.np/features/dented-pride-the-story-of-daura-suruwal-and-dhaka-topi"
+    ],
+    "product_skus": [
+      "daura-suruwal-men-classic-set",
+      "dhaka-topi-nepali-topi-folded",
+      "bhadgaunle-topi-kalo-topi",
+      "wedding-shawl-unisex",
+      "bratabandha-waistcoat-men",
+      "cotton-kurta-suruwal-set-unisex"
+    ]
+  },
+  {
+    "name": "Wedding / Formal (Couple) – Classic",
+    "product_names": [
+      "Daura Suruwal",
+      "Dhaka Topi",
+      "Shawl",
+      "Saree"
+    ],
+    "strength": 0.85,
+    "reason": "Formal Nepali wedding look: men’s daura/topi/shawl and women’s red saree are frequently coordinated.",
+    "source_urls": [
+      "http://ecs.com.np/features/dented-pride-the-story-of-daura-suruwal-and-dhaka-topi"
+    ],
+    "product_skus": [
+      "marriage-daura-suruwal-men-premium",
+      "dhaka-topi-men-wedding-edition",
+      "wedding-shawl-unisex",
+      "marriage-saree-women-classic-red"
+    ]
+  },
+  {
+    "name": "Newar Community Dress & Jatra (Women + Performance)",
+    "product_names": [
+      "Haku Patasi + Chaubandi Cholo Set",
+      "Tapalan",
+      "Bhadgaunle Topi",
+      "Lakhe Costume Mask",
+      "Bhairav Mask",
+      "Sweta Bhairav Mask"
+    ],
+    "strength": 0.9,
+    "reason": "Newar cultural wear and jatra-related performance items often co-occur for community events and performances.",
+    "source_urls": [
+      "https://swodeshi.com/how-to-wear-newari-dress/",
+      "https://en.wikipedia.org/wiki/Lakhey"
+    ],
+    "product_skus": [
+      "haku-patasi-chaubandi-cholo-set-women",
+      "tapalan-newar-traditional-mens-long-shirt",
+      "bhadgaunle-topi-kalo-topi",
+      "lakhe-lakhey-costume-mask-newar-jatra-performance",
+      "bhairav-mask-shiva-bhairava-cultural-replica",
+      "sweta-bhairav-mask-replica-jatra-displayperformance"
+    ]
+  },
+  {
+    "name": "Newar Jatra Performance (Lakhey set)",
+    "product_names": [
+      "Lakhe Costume Mask",
+      "Lakhe Full Costume Set",
+      "Bhairav Mask"
+    ],
+    "strength": 0.88,
+    "reason": "Lakhey performances center around the mask/costume and related Newar deity imagery.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lakhey",
+      "https://artsandculture.google.com/story/infamous-but-captivating-lakhe-dance-of-nepal-ichcap/7wVxVo4jDR4cLA?hl=en"
+    ],
+    "product_skus": [
+      "lakhe-lakhey-costume-mask-newar-jatra-performance",
+      "lakhe-lakhey-full-costume-set-newar-cultural-performance",
+      "bhairav-mask-shiva-bhairava-cultural-replica"
+    ]
+  },
+  {
+    "name": "Kids Traditional Starter Set (Pasni + Festivals)",
+    "product_names": [
+      "Daura Suruwal Set",
+      "Kurta Suruwal",
+      "Dhaka Topi",
+      "Gunyo Cholo Set",
+      "Haku Patasi Mini Set"
+    ],
+    "strength": 0.8,
+    "reason": "Kids sets for pasni and festivals commonly include traditional outfits plus a topi for boys.",
+    "source_urls": [],
+    "product_skus": [
+      "daura-suruwal-kids-set",
+      "pasni-kurta-suruwal-kids-unisex",
+      "pasni-dhaka-topi-kids",
+      "gunyo-cholo-set-girl",
+      "haku-patasi-kids-mini-set-girl"
+    ]
+  },
+  {
+    "name": "Holi-Friendly Basics",
+    "product_names": [
+      "White Kurta",
+      "White Kurta",
+      "Plain White T-Shirt",
+      "Dupatta Scarf"
+    ],
+    "strength": 0.75,
+    "reason": "For Holi, light/white basics plus a scarf/dupatta are practical and commonly bought together.",
+    "source_urls": [],
+    "product_skus": [
+      "white-kurta-men-holi-friendly",
+      "white-kurta-women-holi-friendly",
+      "plain-white-t-shirt-unisex-holi",
+      "color-safe-dupattascarf-unisex-holi"
+    ]
+  },
+  {
+    "name": "Teej Women’s Red Look",
+    "product_names": [
+      "Red Sari + Blouse Set",
+      "Kurta Suruwal Set",
+      "Kurta Suruwal",
+      "Dupatta Scarf"
+    ],
+    "strength": 0.8,
+    "reason": "Teej is strongly associated with women dressing in red; a dupatta/scarf is a common add-on.",
+    "source_urls": [
+      "https://www.rmpbs.org/news/arts-culture/teej-colorado"
+    ],
+    "product_skus": [
+      "red-sari-blouse-set-women-teej-special",
+      "kurta-suruwal-set-women-teej",
+      "dashain-women-kurta-suruwal-women",
+      "color-safe-dupattascarf-unisex-holi"
+    ]
+  },
+  {
+    "name": "Dashain / Tihar Unisex Kurta Pick",
+    "product_names": [
+      "Kurta Suruwal",
+      "Kurta",
+      "Dhaka Topi"
+    ],
+    "strength": 0.65,
+    "reason": "During major festivals, shoppers often mix and match kurta sets with a topi for a complete look.",
+    "source_urls": [],
+    "product_skus": [
+      "dashain-women-kurta-suruwal-women",
+      "tihar-deusi-bhailo-kurta-unisex",
+      "dhaka-topi-nepali-topi-folded"
+    ]
+  },
+  {
+    "name": "Chhath / Janmashtami (Terai) Essentials",
+    "product_names": [
+      "Dhoti Kurta Set",
+      "Saree"
+    ],
+    "strength": 0.7,
+    "reason": "Traditional festival attire in the Terai commonly includes men’s dhoti-kurta and women’s saree.",
+    "source_urls": [
+      "https://trendoye.com/blogs/news/traditional-chhath-puja-sarees"
+    ],
+    "product_skus": [
+      "dhoti-kurta-set-men-chhath-janmashtami",
+      "chhath-saree-women-terai"
+    ]
+  },
+  {
+    "name": "Christmas Winter Picks",
+    "product_names": [
+      "Sweater",
+      "Santa Hat",
+      "Beanie + Gloves Set"
+    ],
+    "strength": 0.7,
+    "reason": "Seasonal winter accessories and Christmas-themed items are often bought together.",
+    "source_urls": [],
+    "product_skus": [
+      "christmas-sweater-unisex",
+      "santa-hat-christmas",
+      "maghe-sankranti-beanie-gloves-set"
+    ]
+  },
+  {
+    "name": "Halloween Costume Add-ons",
+    "product_names": [
+      "Cape",
+      "Plain White T-Shirt"
+    ],
+    "strength": 0.55,
+    "reason": "Costume accessories are commonly paired with basic clothing layers.",
+    "source_urls": [],
+    "product_skus": [
+      "halloween-cape-costume-accessory",
+      "plain-white-t-shirt-unisex-holi"
+    ]
+  },
+  {
+    "name": "Maghe Sankranti Winter Layering Set (General)",
+    "product_names": [
+      "Thermal Inner Set",
+      "Sweater",
+      "Wool Shawl",
+      "Beanie + Gloves Set",
+      "Dhaka Scarf"
+    ],
+    "strength": 0.85,
+    "reason": "Maghe Sankranti falls in winter; buyers often bundle inner layers with sweater/shawl/scarf and warm accessories.",
+    "source_urls": [],
+    "product_skus": [
+      "maghe-sankranti-thermal-inner-set-unisex",
+      "maghe-sankranti-sweater-unisex",
+      "maghe-sankranti-wool-shawl-unisex",
+      "maghe-sankranti-beanie-gloves-set",
+      "maghe-sankranti-dhaka-scarf-unisex"
+    ]
+  },
+  {
+    "name": "Maghe Sankranti (Magar) Cultural Set",
+    "product_names": [
+      "Cholo + Phariya + Patuka Set",
+      "Kachhad + Bhoto Set",
+      "Patuka",
+      "Ghalek Shawl"
+    ],
+    "strength": 0.85,
+    "reason": "Magar cultural outfits are complemented by patuka/ghalek-style shawls.",
+    "source_urls": [],
+    "product_skus": [
+      "maghe-sankranti-magar-women-set-cholo-phariya-patuka",
+      "maghe-sankranti-magar-men-set-kachhad-bhoto",
+      "maghe-sankranti-magar-patuka-waist-sash",
+      "maghe-sankranti-magar-ghalek-shawl-women"
+    ]
+  },
+  {
+    "name": "Maghe Sankranti (Tharu) Cultural Set",
+    "product_names": [
+      "Traditional Dress",
+      "Traditional Dress",
+      "Dhoti + Kurta Set",
+      "Silver Jewelry Set"
+    ],
+    "strength": 0.85,
+    "reason": "Tharu traditional wear is often paired with jewelry and complementary men’s attire for community celebrations.",
+    "source_urls": [],
+    "product_skus": [
+      "maghe-sankranti-tharu-women-dress-traditional",
+      "maghe-sankranti-rana-tharu-women-dress-traditional",
+      "maghe-sankranti-tharu-men-set-dhoti-kurta",
+      "maghe-sankranti-tharu-silver-jewelry-set-women"
+    ]
+  },
+  {
+    "name": "Janai Purnima Thread Essentials",
+    "product_names": [
+      "Janai Pack",
+      "Doro/Rakhi Thread Pack"
+    ],
+    "strength": 0.8,
+    "reason": "Janai Purnima involves renewing the sacred thread and tying protective doro/rakhi threads.",
+    "source_urls": [
+      "https://www.archaicnepal.com/blog/festival-of-sacred-thread-of-protection-janai-purnima/"
+    ],
+    "product_skus": [
+      "janai-sacred-thread-pack",
+      "dororakhi-thread-pack"
+    ]
+  },
+  {
+    "name": "Bratabandha Ceremony (Teen Boy) Add-ons",
+    "product_names": [
+      "Daura Suruwal",
+      "Dhaka Topi",
+      "Janai Pack",
+      "Doro/Rakhi Thread Pack"
+    ],
+    "strength": 0.85,
+    "reason": "Bratabandha commonly includes traditional clothing plus janai and ritual threads.",
+    "source_urls": [
+      "https://www.archaicnepal.com/blog/festival-of-sacred-thread-of-protection-janai-purnima/"
+    ],
+    "product_skus": [
+      "bratabandha-daura-suruwal-teen-boy",
+      "bratabandha-dhaka-topi-teen-boy",
+      "janai-sacred-thread-pack",
+      "dororakhi-thread-pack"
+    ]
+  },
+  {
+    "name": "Buddha Jayanti (Buddhist Community Wear)",
+    "product_names": [
+      "White Kurta",
+      "Chuba Set",
+      "Cholo + Phariya + Ghalek Set"
+    ],
+    "strength": 0.75,
+    "reason": "Buddha Jayanti observances often feature modest/traditional outfits; Himalayan/Buddhist community attire is relevant.",
+    "source_urls": [
+      "https://commons.wikimedia.org/wiki/Category:Statues_of_the_Buddha_in_Nepal"
+    ],
+    "product_skus": [
+      "buddha-jayanti-white-kurta-unisex",
+      "tibetan-chuba-lama-set-unisex",
+      "gurung-women-set-tamu-lhosar-cholo-phariya-ghalek"
+    ]
+  },
+  {
+    "name": "Shivaratri Devotional Set",
+    "product_names": [
+      "Rudraksha Mala",
+      "White Kurta",
+      "Dhoti Kurta Set"
+    ],
+    "strength": 0.65,
+    "reason": "Rudraksha mala is commonly paired with simple traditional clothing for devotional observances.",
+    "source_urls": [
+      "https://commons.wikimedia.org/wiki/File:Rudraksha_mala.jpg"
+    ],
+    "product_skus": [
+      "shivaratri-rudraksha-mala-accessory",
+      "buddha-jayanti-white-kurta-unisex",
+      "dhoti-kurta-set-men-chhath-janmashtami"
+    ]
+  },
+  {
+    "name": "Newari Bridal Set",
+    "product_names": [
+      "Bridal Saree Set",
+      "Haku Patasi + Chaubandi Cholo Set",
+      "Bhadgaunle Topi"
+    ],
+    "strength": 0.7,
+    "reason": "Newar bridal items and Newari dress pieces are often cross-browsed and purchased together.",
+    "source_urls": [
+      "https://swodeshi.com/how-to-wear-newari-dress/"
+    ],
+    "product_skus": [
+      "newari-bridal-saree-set-women-newar",
+      "haku-patasi-chaubandi-cholo-set-women",
+      "bhadgaunle-topi-kalo-topi"
+    ]
+  }
+]

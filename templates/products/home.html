@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+{% load static %}
+{% load pricing_tags %}
+
+{% block title %}NepWears | Home{% endblock %}
+
+{% block content %}
+  <section id="offers" class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h3 class="mb-0">Flash sale</h3>
+      <div class="text-muted small">Upcoming festivals</div>
+    </div>
+
+    <div class="nw-flash-festival-row mb-3">
+      {% for e in upcoming_events %}
+        <a class="nw-flash-festival-btn" href="{% url 'products:list' %}?{{ e.query_kind }}={{ e.slug }}">
+          {% if e.image_url %}
+            <img class="nw-flash-festival-img" src="{{ e.image_url }}" alt="{{ e.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+          {% else %}
+            <img class="nw-flash-festival-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ e.name }}">
+          {% endif %}
+          <span class="nw-flash-festival-copy">
+            <span class="badge text-bg-warning mb-1">Flash sale</span>
+            <span class="nw-flash-festival-name">{{ e.name }}</span>
+            <span class="nw-flash-festival-meta">
+              {% if e.days_left == 0 %}Today{% else %}In {{ e.days_left }} days{% endif %}
+              {% if e.discount_percent %} - {{ e.discount_percent }}% off{% endif %}
+            </span>
+          </span>
+        </a>
+      {% empty %}
+        <div class="alert alert-secondary mb-0">Add festival data to rotate flash sale offers.</div>
+      {% endfor %}
+    </div>
+
+    {% if sale_event and sale_products %}
+      <div class="nw-flash-summary rounded-4 p-3 p-md-4 mb-3">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <div class="badge text-bg-warning mb-2">Flash sale</div>
+            <h2 class="fw-bold mb-1 text-white">{{ sale_event.name }} Sale</h2>
+            <div class="text-white-75">
+              {% if sale_event.days_left == 0 %}Today{% else %}In {{ sale_event.days_left }} days{% endif %}
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="nw-flash-discount mb-2">
+              {% if sale_event.discount_percent %}{{ sale_event.discount_percent }}% off{% else %}Festival-ready picks{% endif %}
+            </div>
+            <div>
+              <a class="btn btn-light" href="{% url 'products:list' %}?{{ sale_event.query_kind }}={{ sale_event.slug }}">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if sale_event and sale_products %}
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h4 class="mb-0">{{ sale_event.name }} picks</h4>
+        <div class="text-muted small">Selected for this festival offer</div>
+      </div>
+      <div class="row g-3 mb-4">
+        {% for p in sale_products %}
+          <div class="col-6 col-md-3">
+            <div class="card h-100">
+              {% with img=p.images.first %}
+                {% if img and img.image %}
+                  <img class="card-img-top nw-card-img" src="{{ img.image.url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                {% elif img and img.source_url %}
+                  <img class="card-img-top nw-card-img" src="{{ img.source_url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+                {% else %}
+                  <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+                {% endif %}
+              {% endwith %}
+              <div class="card-body">
+                <div class="fw-semibold">{{ p.name }}</div>
+                <div class="text-muted small">{{ p.type|title }}</div>
+                <div class="mt-2">
+                  {% if p.sale_price_npr %}
+                    <span class="text-muted text-decoration-line-through me-2">
+                      {{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}
+                    </span>
+                    <span class="fw-bold">
+                      {{ currency_symbol }}{{ p.sale_price_npr|price_in:currency }}
+                    </span>
+                  {% else %}
+                    <span class="fw-bold">{{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}</span>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="{% url 'products:detail' p.id %}" class="btn btn-sm btn-outline-dark w-100">View</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+
+  <section class="nw-hero rounded-4 overflow-hidden mb-4">
+    <div class="nw-hero-overlay p-4 p-md-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold mb-2">Celebrate Nepali Culture Anywhere in the World</h1>
+          <p class="lead mb-4 text-white-75">Traditional wear, festival-ready packages, and community styles for Nepali people living abroad.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="{% url 'products:list' %}?gender=men" class="btn btn-warning btn-lg">Shop Men</a>
+            <a href="{% url 'products:list' %}?gender=women" class="btn btn-outline-light btn-lg">Shop Women</a>
+            <a href="#offers" class="btn btn-outline-light btn-lg">Flash Sale</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="nw-hero-card p-3 p-md-4">
+            <div class="small text-uppercase text-muted fw-semibold">Today's offer</div>
+            {% if sale_event %}
+              <div class="fs-5 fw-bold">{{ sale_event.name }} Sale</div>
+              <div class="text-muted">{{ sale_discount_percent }}% off selected items</div>
+              <a class="btn btn-sm btn-warning mt-3" href="#offers">Shop offer</a>
+            {% else %}
+              <div class="fs-5 fw-bold">Festival offers</div>
+              <div class="text-muted">Add events to dataset to activate offers.</div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h3 class="mb-0">Featured products</h3>
+    <a class="btn btn-sm btn-outline-dark" href="{% url 'products:list' %}">View all</a>
+  </div>
+
+  <div class="row g-3 mb-4">
+    {% for p in products|slice:":3" %}
+      <div class="col-12 col-md-4">
+        <div class="card h-100 nw-product-card">
+          {% with img=p.images.first %}
+            {% if img and img.image %}
+              <img class="card-img-top nw-card-img" src="{{ img.image.url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+            {% elif img and img.source_url %}
+              <img class="card-img-top nw-card-img" src="{{ img.source_url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+            {% else %}
+              <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+            {% endif %}
+          {% endwith %}
+          <div class="card-body">
+            <div class="d-flex justify-content-between gap-2">
+              <div class="fw-semibold">{{ p.name }}</div>
+              <div class="text-nowrap">
+                {% if p.sale_price_npr %}
+                  <span class="text-muted text-decoration-line-through me-1">{{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}</span>
+                  <span class="fw-bold">{{ currency_symbol }}{{ p.sale_price_npr|price_in:currency }}</span>
+                {% else %}
+                  <span class="fw-bold">{{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}</span>
+                {% endif %}
+              </div>
+            </div>
+            <div class="text-muted small">{{ p.type|title }}</div>
+            {% if p.stock_alert_message %}
+              <div class="badge text-bg-warning mt-2">{{ p.stock_alert_message }}</div>
+            {% endif %}
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <a href="{% url 'products:detail' p.id %}" class="btn btn-sm btn-outline-dark w-100">View</a>
+            <form method="post" action="{% url 'orders:add_to_cart' p.id %}" class="w-100">
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{ request.get_full_path }}">
+              <button class="btn btn-sm btn-warning w-100" type="submit">Add to cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <div class="col-12">
+        <div class="alert alert-secondary">No products yet. Import your dataset to start displaying items.</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <div>
+      <h3 class="mb-0">Recommended for you</h3>
+      <div class="text-muted small">
+        {% if user.is_authenticated %}Based on your views, wishlist, cart, and festival timing.{% else %}Popular products and festival-ready picks.{% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3">
+    {% for p in recommended %}
+      <div class="col-6 col-md-3">
+        <div class="card h-100">
+          {% with img=p.images.first %}
+            {% if img and img.image %}
+              <img class="card-img-top nw-card-img" src="{{ img.image.url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+            {% elif img and img.source_url %}
+              <img class="card-img-top nw-card-img" src="{{ img.source_url }}" alt="{{ img.alt_text|default:p.name }}" onerror="this.onerror=null;this.src='{% static 'img/product-placeholder.svg' %}';">
+            {% else %}
+              <img class="card-img-top nw-card-img" src="{% static 'img/product-placeholder.svg' %}" alt="{{ p.name }}">
+            {% endif %}
+          {% endwith %}
+          <div class="card-body">
+            <div class="fw-semibold">{{ p.name }}</div>
+            <div class="text-muted small">{{ p.type|title }}</div>
+            <div class="mt-2">
+              {% if p.sale_price_npr %}
+                <span class="text-muted text-decoration-line-through me-1">{{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}</span>
+                <span class="fw-bold">{{ currency_symbol }}{{ p.sale_price_npr|price_in:currency }}</span>
+              {% else %}
+                <span class="fw-bold">{{ currency_symbol }}{{ p.base_price_npr|price_in:currency }}</span>
+              {% endif %}
+            </div>
+            {% if p.recommendation_reason %}
+              <div class="badge text-bg-light border mt-2">{{ p.recommendation_reason }}</div>
+            {% endif %}
+          </div>
+          <div class="card-footer bg-white border-0">
+            <a href="{% url 'products:detail' p.id %}" class="btn btn-sm btn-outline-dark w-100">View</a>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <div class="col-12">
+        <div class="alert alert-secondary">Recommendations will appear once products and purchase/view history exist.</div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

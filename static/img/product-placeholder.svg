@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Traditional clothing placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff4c2"/>
+      <stop offset=".5" stop-color="#f7df78"/>
+      <stop offset="1" stop-color="#f05a4f"/>
+    </linearGradient>
+    <pattern id="weave" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M0 18h36M18 0v36" stroke="#0b0f19" stroke-opacity=".08" stroke-width="4"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#weave)"/>
+  <circle cx="400" cy="300" r="188" fill="#fffaf0" fill-opacity=".82"/>
+  <path d="M306 185h188l42 104-58 20-20-48v162H342V261l-20 48-58-20 42-104z" fill="#0b0f19"/>
+  <path d="M348 185c10 29 28 45 52 45s42-16 52-45" fill="#ffcc33"/>
+  <path d="M356 268h88M356 312h88M356 356h88" stroke="#ffcc33" stroke-width="14" stroke-linecap="round"/>
+  <path d="M274 436h252" stroke="#0b0f19" stroke-opacity=".2" stroke-width="18" stroke-linecap="round"/>
+</svg>

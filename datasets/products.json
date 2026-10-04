@@ -1,0 +1,2398 @@
+[
+  {
+    "name": "Haku Patasi + Chaubandi Cholo Set",
+    "type": "single",
+    "base_price_npr": 8900,
+    "stock_quantity": 12,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra",
+        "yomari-punhe",
+        "tihar-mha-puja"
+      ],
+      "occasion": [
+        "mothers-day"
+      ],
+      "category": [
+        "newari-dress",
+        "saree",
+        "cultural-dress",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Women%20wearinhg%20tradtional%20Newari%20dress%20-%20Haku%20Patasi%2005.jpg",
+        "alt": "Women wearing Haku Patasi, a Newar traditional dress"
+      }
+    ],
+    "sku": "haku-patasi-chaubandi-cholo-set-women",
+    "relevance_note": "Newar/Kathmandu Valley traditional wear; relevant to Newar ceremonies and festivals such as Gai Jatra, Indra Jatra, Yomari Punhi, and Mha Puja.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Haku Patasi Mini Set",
+    "type": "single",
+    "base_price_npr": 5900,
+    "stock_quantity": 8,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "kids",
+        "girls"
+      ],
+      "age_group": [
+        "kids"
+      ],
+      "event": [
+        "pasni"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra",
+        "yomari-punhe",
+        "tihar-mha-puja"
+      ],
+      "category": [
+        "newari-dress",
+        "kids-wear",
+        "cultural-dress",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Women%20wearinhg%20tradtional%20Newari%20dress%20-%20Haku%20Patasi%2001.jpg",
+        "alt": "Haku Patasi reference for Newar dress"
+      }
+    ],
+    "sku": "haku-patasi-kids-mini-set-girl",
+    "relevance_note": "Newar/Kathmandu Valley traditional wear; relevant to Newar ceremonies and festivals such as Gai Jatra, Indra Jatra, Yomari Punhi, and Mha Puja.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Tapalan",
+    "type": "single",
+    "base_price_npr": 7200,
+    "stock_quantity": 10,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra",
+        "yomari-punhe",
+        "tihar-mha-puja"
+      ],
+      "category": [
+        "newari-dress",
+        "cultural-dress",
+        "traditional",
+        "menswear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Newar%20traditional%20clothing.jpg",
+        "alt": "Newar traditional clothing reference"
+      }
+    ],
+    "sku": "tapalan-newar-traditional-mens-long-shirt",
+    "relevance_note": "Newar/Kathmandu Valley traditional wear; relevant to Newar ceremonies and festivals such as Gai Jatra, Indra Jatra, Yomari Punhi, and Mha Puja.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Daura Suruwal Classic Set",
+    "type": "single",
+    "base_price_npr": 11500,
+    "stock_quantity": 15,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "event": [
+        "marriage",
+        "bratabandha"
+      ],
+      "category": [
+        "daura-suruwal",
+        "traditional",
+        "menswear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20dress%2C%20Nepalese%20%28AM%202015.99.1-41%29.jpg",
+        "alt": "Daura Suruwal, Nepali national dress"
+      }
+    ],
+    "sku": "daura-suruwal-men-classic-set",
+    "relevance_note": "General Nepali traditional/formal wear; useful for ceremonies and formal cultural events but not exclusive to one festival.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Daura Suruwal Set",
+    "type": "single",
+    "base_price_npr": 6900,
+    "stock_quantity": 9,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "kids",
+        "boys"
+      ],
+      "age_group": [
+        "kids"
+      ],
+      "event": [
+        "pasni"
+      ],
+      "category": [
+        "daura-suruwal",
+        "kids-wear",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20dress%2C%20Nepalese%20%28AM%202015.99.1-15%29.jpg",
+        "alt": "Daura Suruwal reference"
+      }
+    ],
+    "sku": "daura-suruwal-kids-set",
+    "relevance_note": "General Nepali traditional/formal wear; useful for ceremonies and formal cultural events but not exclusive to one festival.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Dhaka Topi",
+    "type": "single",
+    "base_price_npr": 1600,
+    "stock_quantity": 40,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "event": [
+        "bratabandha",
+        "marriage"
+      ],
+      "category": [
+        "topi",
+        "traditional",
+        "accessory",
+        "menswear",
+        "dhaka-topi"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Nepali_Dhaka_Topi_in_folded_position.jpg",
+        "alt": "Dhaka Topi (Nepali topi)"
+      }
+    ],
+    "sku": "dhaka-topi-nepali-topi-folded",
+    "relevance_note": "General Nepali traditional/formal wear; useful for ceremonies and formal cultural events but not exclusive to one festival.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Bhadgaunle Topi",
+    "type": "single",
+    "base_price_npr": 1400,
+    "stock_quantity": 30,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra",
+        "yomari-punhe",
+        "tihar-mha-puja"
+      ],
+      "category": [
+        "topi",
+        "traditional",
+        "accessory",
+        "menswear",
+        "bhadgaunle-topi"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bhadgaunle%20Topi.jpg",
+        "alt": "Bhadgaunle Topi (reference)"
+      }
+    ],
+    "sku": "bhadgaunle-topi-kalo-topi",
+    "relevance_note": "Newar/Kathmandu Valley traditional wear; relevant to Newar ceremonies and festivals such as Gai Jatra, Indra Jatra, Yomari Punhi, and Mha Puja.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Gunyo Cholo Set",
+    "type": "single",
+    "base_price_npr": 7500,
+    "stock_quantity": 7,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "kids",
+        "girls"
+      ],
+      "age_group": [
+        "kids"
+      ],
+      "event": [
+        "pasni"
+      ],
+      "category": [
+        "kids-wear",
+        "cultural-dress",
+        "traditional",
+        "gunyo-cholo"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://houseofnepal.com.au/cdn/shop/files/FB-IMG_1739326671018.jpg",
+        "alt": "Gunyo Cholo dress (reference)"
+      }
+    ],
+    "sku": "gunyo-cholo-set-girl",
+    "relevance_note": "Child ceremony wear; relevant to Pasni and family ceremonies rather than a seasonal festival.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "White Kurta",
+    "type": "single",
+    "base_price_npr": 3200,
+    "stock_quantity": 25,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "fagu-purnima-pahad",
+        "fagu-purnima-terai"
+      ],
+      "category": [
+        "kurta",
+        "holi",
+        "menswear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyjama%20kurta.jpg",
+        "alt": "White kurta pajama"
+      }
+    ],
+    "sku": "white-kurta-men-holi-friendly",
+    "relevance_note": "Light/white washable clothing and accessories suited to Fagu Purnima/Holi color play rather than caste-specific dress.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "White Kurta",
+    "type": "single",
+    "base_price_npr": 3300,
+    "stock_quantity": 20,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "fagu-purnima-pahad",
+        "fagu-purnima-terai"
+      ],
+      "category": [
+        "kurta",
+        "holi",
+        "womenswear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyjama%20kurta.jpg",
+        "alt": "White kurta reference"
+      }
+    ],
+    "sku": "white-kurta-women-holi-friendly",
+    "relevance_note": "Light/white washable clothing and accessories suited to Fagu Purnima/Holi color play rather than caste-specific dress.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Cotton Kurta Suruwal Set",
+    "type": "single",
+    "base_price_npr": 5200,
+    "stock_quantity": 18,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men",
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "category": [
+        "kurta-suruwal",
+        "traditional",
+        "unisex"
+      ]
+    },
+    "images": [],
+    "sku": "cotton-kurta-suruwal-set-unisex"
+  },
+  {
+    "name": "Plain White T-Shirt",
+    "type": "single",
+    "base_price_npr": 1200,
+    "stock_quantity": 50,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "festival": [
+        "fagu-purnima-pahad",
+        "fagu-purnima-terai"
+      ],
+      "category": [
+        "casual",
+        "holi",
+        "unisex"
+      ]
+    },
+    "images": [
+      {
+        "url": "http://commons.wikimedia.org/wiki/Special:FilePath/T-Shirt.jpg",
+        "alt": "Plain t-shirt (reference)"
+      }
+    ],
+    "sku": "plain-white-t-shirt-unisex-holi",
+    "relevance_note": "Light/white washable clothing and accessories suited to Fagu Purnima/Holi color play rather than caste-specific dress.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Dupatta Scarf",
+    "type": "single",
+    "base_price_npr": 900,
+    "stock_quantity": 35,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "all"
+      ],
+      "festival": [
+        "fagu-purnima-pahad",
+        "fagu-purnima-terai"
+      ],
+      "category": [
+        "scarf",
+        "accessory",
+        "holi",
+        "unisex"
+      ]
+    },
+    "images": [
+      {
+        "url": "http://commons.wikimedia.org/wiki/Special:FilePath/Seminole_patchwork_shawl.jpg",
+        "alt": "Scarf/shawl (reference)"
+      }
+    ],
+    "sku": "color-safe-dupattascarf-unisex-holi",
+    "relevance_note": "Light/white washable clothing and accessories suited to Fagu Purnima/Holi color play rather than caste-specific dress.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Red Sari + Blouse Set",
+    "type": "single",
+    "base_price_npr": 9800,
+    "stock_quantity": 11,
+    "tags": {
+      "caste": [
+        "all",
+        "bahun",
+        "chettri"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "teej"
+      ],
+      "occasion": [
+        "mothers-day"
+      ],
+      "category": [
+        "saree",
+        "teej",
+        "womenswear",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teej.jpg",
+        "alt": "Women dancing during Teej in Lalitpur, Nepal"
+      }
+    ],
+    "sku": "red-sari-blouse-set-women-teej-special",
+    "relevance_note": "Women-focused Teej wear; red sari/kurta styling aligns with Teej observances and women gathering for Shiva-Parvati worship.",
+    "source_urls": [
+      "https://nepaldesk.com/festival-event/teej",
+      "https://ecs.com.np/festival/the-women-in-red"
+    ]
+  },
+  {
+    "name": "Kurta Suruwal Set",
+    "type": "single",
+    "base_price_npr": 6200,
+    "stock_quantity": 14,
+    "tags": {
+      "caste": [
+        "all",
+        "bahun",
+        "chettri"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "teej"
+      ],
+      "occasion": [
+        "mothers-day"
+      ],
+      "category": [
+        "kurta-suruwal",
+        "teej",
+        "menswear"
+      ]
+    },
+    "images": [],
+    "sku": "kurta-suruwal-set-women-teej",
+    "relevance_note": "Women-focused Teej wear; red sari/kurta styling aligns with Teej observances and women gathering for Shiva-Parvati worship.",
+    "source_urls": [
+      "https://nepaldesk.com/festival-event/teej",
+      "https://ecs.com.np/festival/the-women-in-red"
+    ]
+  },
+  {
+    "name": "Dhoti Kurta Set",
+    "type": "single",
+    "base_price_npr": 6400,
+    "stock_quantity": 10,
+    "tags": {
+      "caste": [
+        "madhesi"
+      ],
+      "region": [
+        "terai"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "chaath-parwa"
+      ],
+      "category": [
+        "dhoti",
+        "kurta",
+        "terai",
+        "menswear",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Man_in_Dhoti_Kurta.JPG",
+        "alt": "Dhoti kurta (reference)"
+      }
+    ],
+    "sku": "dhoti-kurta-set-men-chhath-janmashtami",
+    "relevance_note": "Terai/Madhesi Chhath clothing; Chhath is a solar festival observed in parts of Nepal including Madhesi communities.",
+    "source_urls": [
+      "https://www.britannica.com/topic/Chhath-Puja",
+      "https://nepjol.info/index.php/jrj/article/view/82419"
+    ]
+  },
+  {
+    "name": "Saree",
+    "type": "single",
+    "base_price_npr": 9200,
+    "stock_quantity": 8,
+    "tags": {
+      "caste": [
+        "madhesi"
+      ],
+      "region": [
+        "terai"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "chaath-parwa"
+      ],
+      "category": [
+        "saree",
+        "terai",
+        "chhath",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chhath-Puja.jpg",
+        "alt": "Woman worshipping during Chhath Puja"
+      }
+    ],
+    "sku": "chhath-saree-women-terai",
+    "relevance_note": "Terai/Madhesi Chhath clothing; Chhath is a solar festival observed in parts of Nepal including Madhesi communities.",
+    "source_urls": [
+      "https://www.britannica.com/topic/Chhath-Puja",
+      "https://nepjol.info/index.php/jrj/article/view/82419"
+    ]
+  },
+  {
+    "name": "Santa Hat",
+    "type": "single",
+    "base_price_npr": 450,
+    "stock_quantity": 80,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "all"
+      ],
+      "festival": [
+        "christmas"
+      ],
+      "category": [
+        "christmas",
+        "accessory",
+        "winter"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Santa_hat.svg",
+        "alt": "Santa hat"
+      }
+    ],
+    "sku": "santa-hat-christmas",
+    "relevance_note": "Christmas accessory for seasonal celebration.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Cape",
+    "type": "single",
+    "base_price_npr": 1800,
+    "stock_quantity": 30,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "occasion": [
+        "halloween"
+      ],
+      "category": [
+        "halloween",
+        "costume",
+        "accessory"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Halloween%20costume.jpg",
+        "alt": "Halloween costume (reference)"
+      }
+    ],
+    "sku": "halloween-cape-costume-accessory",
+    "relevance_note": "Costume accessory for Halloween; occasion-based rather than Nepali caste/festival product.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Wool Shawl",
+    "type": "single",
+    "base_price_npr": 2800,
+    "stock_quantity": 24,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "hilly",
+        "himalayan",
+        "terai"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "category": [
+        "winter",
+        "shawl",
+        "traditional",
+        "maghe"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shawl_MET_1979.346.199.jpg",
+        "alt": "Shawl (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-wool-shawl-unisex",
+    "relevance_note": "Generic winter layer; useful seasonally, but not culturally specific enough to appear as a Maghe Sankranti festival match.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Sweater",
+    "type": "single",
+    "base_price_npr": 3200,
+    "stock_quantity": 18,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "category": [
+        "winter",
+        "sweater"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sweater_wiki.jpg",
+        "alt": "Sweater (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-sweater-unisex",
+    "relevance_note": "Generic winter layer; useful seasonally, but not culturally specific enough to appear as a Maghe Sankranti festival match.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Thermal Inner Set",
+    "type": "single",
+    "base_price_npr": 2100,
+    "stock_quantity": 30,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "category": [
+        "winter",
+        "innerwear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermal_underwear.jpg",
+        "alt": "Thermal innerwear (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-thermal-inner-set-unisex",
+    "relevance_note": "Generic winter layer; useful seasonally, but not culturally specific enough to appear as a Maghe Sankranti festival match.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Beanie + Gloves Set",
+    "type": "package",
+    "base_price_npr": 1600,
+    "stock_quantity": 40,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "all"
+      ],
+      "category": [
+        "winter",
+        "accessory"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter_gloves_and_hat.jpg",
+        "alt": "Beanie and gloves (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-beanie-gloves-set",
+    "relevance_note": "Generic winter layer; useful seasonally, but not culturally specific enough to appear as a Maghe Sankranti festival match.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Dhaka Scarf",
+    "type": "single",
+    "base_price_npr": 1500,
+    "stock_quantity": 26,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "category": [
+        "winter",
+        "scarf",
+        "dhaka"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wool_scarf.jpg",
+        "alt": "Scarf (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-dhaka-scarf-unisex",
+    "relevance_note": "Generic winter layer; useful seasonally, but not culturally specific enough to appear as a Maghe Sankranti festival match.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Cholo + Phariya + Patuka Set",
+    "type": "package",
+    "base_price_npr": 13900,
+    "stock_quantity": 4,
+    "tags": {
+      "caste": [
+        "magar"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "magar-dress",
+        "cultural-dress",
+        "package",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Girl_wearing_traditional_Magar_dress,_Nepal-070A0920.jpg",
+        "alt": "Traditional Magar dress (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-magar-women-set-cholo-phariya-patuka",
+    "relevance_note": "Magar cultural wear; relevant for Maghe Sankranti/Maghi community celebrations and cultural gatherings.",
+    "source_urls": [
+      "https://www.ecs.com.np/festival/tamu-lhosar-new-year-of-the-gurungs",
+      "https://www.wondersofnepal.com/tamu-lhosar/"
+    ]
+  },
+  {
+    "name": "Kachhad + Bhoto Set",
+    "type": "package",
+    "base_price_npr": 12500,
+    "stock_quantity": 4,
+    "tags": {
+      "caste": [
+        "magar"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "magar-dress",
+        "cultural-dress",
+        "package",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magar%20Cultural%20Dress.jpg",
+        "alt": "Magar cultural dress (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-magar-men-set-kachhad-bhoto",
+    "relevance_note": "Magar cultural wear; relevant for Maghe Sankranti/Maghi community celebrations and cultural gatherings.",
+    "source_urls": [
+      "https://www.ecs.com.np/festival/tamu-lhosar-new-year-of-the-gurungs",
+      "https://www.wondersofnepal.com/tamu-lhosar/"
+    ]
+  },
+  {
+    "name": "Traditional Dress",
+    "type": "single",
+    "base_price_npr": 11800,
+    "stock_quantity": 4,
+    "tags": {
+      "caste": [
+        "tharu"
+      ],
+      "region": [
+        "terai"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "tharu-dress",
+        "cultural-dress",
+        "traditional",
+        "maghi"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20dress%20of%20woman%20Rana%20Tharu%20cast%20of%20Nepal.%28%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A4%BE_%E0%A4%A5%E0%A4%BE%E0%A4%B0%E0%A5%81%E0%A4%95%E0%A5%8B_%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8B_%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B0%E0%A4%A8.jpg",
+        "alt": "Rana Tharu woman traditional dress"
+      }
+    ],
+    "sku": "maghe-sankranti-tharu-women-dress-traditional",
+    "relevance_note": "Tharu cultural wear; relevant for Maghi/Maghe Sankranti community celebrations in the Terai.",
+    "source_urls": [
+      "https://www.britannica.com/topic/Chhath-Puja",
+      "https://nepjol.info/index.php/jrj/article/view/82419"
+    ]
+  },
+  {
+    "name": "Traditional Dress",
+    "type": "single",
+    "base_price_npr": 12500,
+    "stock_quantity": 3,
+    "tags": {
+      "caste": [
+        "tharu"
+      ],
+      "region": [
+        "terai"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "tharu-dress",
+        "cultural-dress",
+        "traditional",
+        "maghi"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cultural_dress_of_woman_Rana_Tharu_cast_of_Nepal.(%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A4%BE_%E0%A4%A5%E0%A4%BE%E0%A4%B0%E0%A5%81%E0%A4%95%E0%A5%8B_%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8B_%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B0%E0%A4%A8.jpg",
+        "alt": "Rana Tharu women's cultural dress (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-rana-tharu-women-dress-traditional",
+    "relevance_note": "Tharu cultural wear; relevant for Maghi/Maghe Sankranti community celebrations in the Terai.",
+    "source_urls": [
+      "https://www.britannica.com/topic/Chhath-Puja",
+      "https://nepjol.info/index.php/jrj/article/view/82419"
+    ]
+  },
+  {
+    "name": "Dhoti + Kurta Set",
+    "type": "package",
+    "base_price_npr": 6900,
+    "stock_quantity": 6,
+    "tags": {
+      "caste": [
+        "tharu"
+      ],
+      "region": [
+        "terai"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "tharu-dress",
+        "dhoti",
+        "kurta",
+        "traditional",
+        "maghi",
+        "package"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Man_in_Dhoti_Kurta.JPG",
+        "alt": "Dhoti kurta (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-tharu-men-set-dhoti-kurta",
+    "relevance_note": "Tharu cultural wear; relevant for Maghi/Maghe Sankranti community celebrations in the Terai.",
+    "source_urls": [
+      "https://www.britannica.com/topic/Chhath-Puja",
+      "https://nepjol.info/index.php/jrj/article/view/82419"
+    ]
+  },
+  {
+    "name": "Silver Jewelry Set",
+    "type": "single",
+    "base_price_npr": 5400,
+    "stock_quantity": 6,
+    "tags": {
+      "caste": [
+        "tharu"
+      ],
+      "region": [
+        "terai"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "tharu-dress",
+        "jewelry",
+        "accessory",
+        "maghi"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silver_jewellery_set.jpg",
+        "alt": "Silver jewelry (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-tharu-silver-jewelry-set-women",
+    "relevance_note": "Tharu cultural wear; relevant for Maghi/Maghe Sankranti community celebrations in the Terai.",
+    "source_urls": [
+      "https://www.britannica.com/topic/Chhath-Puja",
+      "https://nepjol.info/index.php/jrj/article/view/82419"
+    ]
+  },
+  {
+    "name": "Ghalek Shawl",
+    "type": "single",
+    "base_price_npr": 3100,
+    "stock_quantity": 8,
+    "tags": {
+      "caste": [
+        "magar"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "magar-dress",
+        "shawl",
+        "cultural-dress",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shawl_MET_1979.346.199.jpg",
+        "alt": "Shawl (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-magar-ghalek-shawl-women",
+    "relevance_note": "Magar cultural wear; relevant for Maghe Sankranti/Maghi community celebrations and cultural gatherings.",
+    "source_urls": [
+      "https://www.ecs.com.np/festival/tamu-lhosar-new-year-of-the-gurungs",
+      "https://www.wondersofnepal.com/tamu-lhosar/"
+    ]
+  },
+  {
+    "name": "Patuka",
+    "type": "single",
+    "base_price_npr": 900,
+    "stock_quantity": 18,
+    "tags": {
+      "caste": [
+        "magar"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "maghe-sankranti"
+      ],
+      "category": [
+        "magar-dress",
+        "accessory",
+        "patuka"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Patuka.jpg",
+        "alt": "Waist sash (reference)"
+      }
+    ],
+    "sku": "maghe-sankranti-magar-patuka-waist-sash",
+    "relevance_note": "Magar cultural wear; relevant for Maghe Sankranti/Maghi community celebrations and cultural gatherings.",
+    "source_urls": [
+      "https://www.ecs.com.np/festival/tamu-lhosar-new-year-of-the-gurungs",
+      "https://www.wondersofnepal.com/tamu-lhosar/"
+    ]
+  },
+  {
+    "name": "Lakhe Costume Mask",
+    "type": "single",
+    "base_price_npr": 8500,
+    "stock_quantity": 3,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra"
+      ],
+      "category": [
+        "newari-dress",
+        "mask",
+        "performance",
+        "jatra"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lakhey,%20Kathmandu.jpg",
+        "alt": "Lakhey performer in Kathmandu (reference)"
+      }
+    ],
+    "sku": "lakhe-lakhey-costume-mask-newar-jatra-performance",
+    "relevance_note": "Newar jatra/performance item; most relevant to Indra Jatra, Gai Jatra, and Kathmandu Valley cultural performance.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Lakhe Full Costume Set",
+    "type": "package",
+    "base_price_npr": 22500,
+    "stock_quantity": 1,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra"
+      ],
+      "category": [
+        "newari-dress",
+        "mask",
+        "performance",
+        "jatra"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mipwa%20Lakhey,%20Patan,%20Lalitpur.jpg",
+        "alt": "Mipwa Lakhey in Patan (reference)"
+      }
+    ],
+    "sku": "lakhe-lakhey-full-costume-set-newar-cultural-performance",
+    "relevance_note": "Newar jatra/performance item; most relevant to Indra Jatra, Gai Jatra, and Kathmandu Valley cultural performance.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Sweta Bhairav Mask",
+    "type": "single",
+    "base_price_npr": 9800,
+    "stock_quantity": 2,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra"
+      ],
+      "category": [
+        "newari-dress",
+        "mask",
+        "performance",
+        "jatra"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Kaal_Bhairab_and_Mask_of_Sweta_Bhairab.jpg",
+        "alt": "Sweta Bhairab mask (reference)"
+      }
+    ],
+    "sku": "sweta-bhairav-mask-replica-jatra-displayperformance",
+    "relevance_note": "Newar jatra/performance item; most relevant to Indra Jatra, Gai Jatra, and Kathmandu Valley cultural performance.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Bhairav Mask",
+    "type": "single",
+    "base_price_npr": 7600,
+    "stock_quantity": 3,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "indra-jatra",
+        "gai-jatra"
+      ],
+      "category": [
+        "newari-dress",
+        "mask",
+        "performance",
+        "jatra"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nepal,%20maschera%20di%20shiva%20bhairava,%20xvi-inizio%20xvii%20sec.JPG",
+        "alt": "Shiva Bhairava mask (reference)"
+      }
+    ],
+    "sku": "bhairav-mask-shiva-bhairava-cultural-replica",
+    "relevance_note": "Newar jatra/performance item; most relevant to Indra Jatra, Gai Jatra, and Kathmandu Valley cultural performance.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Janai Pack",
+    "type": "single",
+    "base_price_npr": 350,
+    "stock_quantity": 120,
+    "tags": {
+      "caste": [
+        "bahun",
+        "chettri"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "festival": [
+        "janai-purnima"
+      ],
+      "event": [
+        "bratabandha"
+      ],
+      "category": [
+        "ritual",
+        "accessory",
+        "janai"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Rakhi_thread.jpg",
+        "alt": "Sacred thread (reference)"
+      }
+    ],
+    "sku": "janai-sacred-thread-pack",
+    "relevance_note": "Ritual/ceremony item connected to Janai Purnima and Bratabandha; strongest for Bahun/Chettri teen/adult male ceremonies, with Doro/Rakhi broader.",
+    "source_urls": [
+      "https://nepaldesk.com/info/bratabandha"
+    ]
+  },
+  {
+    "name": "Doro/Rakhi Thread Pack",
+    "type": "single",
+    "base_price_npr": 200,
+    "stock_quantity": 160,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "all"
+      ],
+      "festival": [
+        "janai-purnima"
+      ],
+      "category": [
+        "ritual",
+        "accessory"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Rakhi_thread.jpg",
+        "alt": "Thread pack (reference)"
+      }
+    ],
+    "sku": "dororakhi-thread-pack",
+    "relevance_note": "Ritual/ceremony item connected to Janai Purnima and Bratabandha; strongest for Bahun/Chettri teen/adult male ceremonies, with Doro/Rakhi broader.",
+    "source_urls": [
+      "https://nepaldesk.com/info/bratabandha"
+    ]
+  },
+  {
+    "name": "Daura Suruwal",
+    "type": "single",
+    "base_price_npr": 9800,
+    "stock_quantity": 7,
+    "tags": {
+      "caste": [
+        "bahun",
+        "chettri"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "teen"
+      ],
+      "festival": [
+        "janai-purnima"
+      ],
+      "event": [
+        "bratabandha"
+      ],
+      "category": [
+        "daura-suruwal",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Daura_Suruwal_by_Mahalaxmi_Silwal.jpg",
+        "alt": "Daura Suruwal (reference)"
+      }
+    ],
+    "sku": "bratabandha-daura-suruwal-teen-boy",
+    "relevance_note": "Ritual/ceremony item connected to Janai Purnima and Bratabandha; strongest for Bahun/Chettri teen/adult male ceremonies, with Doro/Rakhi broader.",
+    "source_urls": [
+      "https://nepaldesk.com/info/bratabandha"
+    ]
+  },
+  {
+    "name": "Dhaka Topi",
+    "type": "single",
+    "base_price_npr": 1600,
+    "stock_quantity": 20,
+    "tags": {
+      "caste": [
+        "bahun",
+        "chettri"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "teen"
+      ],
+      "festival": [
+        "janai-purnima"
+      ],
+      "event": [
+        "bratabandha"
+      ],
+      "category": [
+        "topi",
+        "dhaka-topi"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Nepali_Dhaka_Topi_in_folded_position.jpg",
+        "alt": "Dhaka Topi"
+      }
+    ],
+    "sku": "bratabandha-dhaka-topi-teen-boy",
+    "relevance_note": "Ritual/ceremony item connected to Janai Purnima and Bratabandha; strongest for Bahun/Chettri teen/adult male ceremonies, with Doro/Rakhi broader.",
+    "source_urls": [
+      "https://nepaldesk.com/info/bratabandha"
+    ]
+  },
+  {
+    "name": "Waistcoat",
+    "type": "single",
+    "base_price_npr": 2600,
+    "stock_quantity": 16,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "event": [
+        "bratabandha",
+        "marriage"
+      ],
+      "category": [
+        "formal",
+        "menswear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Waistcoat.jpg",
+        "alt": "Waistcoat (reference)"
+      }
+    ],
+    "sku": "bratabandha-waistcoat-men",
+    "relevance_note": "Ritual/ceremony item connected to Janai Purnima and Bratabandha; strongest for Bahun/Chettri teen/adult male ceremonies, with Doro/Rakhi broader.",
+    "source_urls": [
+      "https://nepaldesk.com/info/bratabandha"
+    ]
+  },
+  {
+    "name": "Kids Krishna Costume Set",
+    "type": "single",
+    "base_price_npr": 3200,
+    "stock_quantity": 18,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "boys",
+        "kids"
+      ],
+      "age_group": [
+        "kids"
+      ],
+      "festival": [
+        "krishna-janmastami"
+      ],
+      "category": [
+        "costume",
+        "kids-wear",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krishna%20Janmashtami%20Celebration%20-%20A%20kid%20dressed%20as%20Shree%20Krishna.jpg",
+        "alt": "Child dressed as Krishna for Janmashtami"
+      }
+    ],
+    "sku": "janmashtami-kids-krishna-costume-set",
+    "relevance_note": "Krishna Janmashtami costume for children; relevant because Nepali celebrations commonly include children dressed as Krishna.",
+    "source_urls": [
+      "https://nepaldesk.com/festival-event/krishna-janmashtami",
+      "https://kathmandupost.com/visual-stories/2019/08/23/here-is-how-nepalis-celebrated-krishna-janmashtami-and-gaura",
+      "https://commons.wikimedia.org/wiki/File:Krishna_Janmashtami_Celebration_-_A_kid_dressed_as_Shree_Krishna.jpg"
+    ]
+  },
+  {
+    "name": "Kids Radha Costume Set",
+    "type": "single",
+    "base_price_npr": 3600,
+    "stock_quantity": 14,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "girls",
+        "kids"
+      ],
+      "age_group": [
+        "kids"
+      ],
+      "festival": [
+        "krishna-janmastami"
+      ],
+      "category": [
+        "costume",
+        "kids-wear",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Krishna%20Janamashtami.jpg",
+        "alt": "Radha Krishna Janmashtami costume reference"
+      }
+    ],
+    "sku": "janmashtami-kids-radha-costume-set",
+    "relevance_note": "Radha costume for Krishna Janmashtami programs, school celebrations, and cultural performances.",
+    "source_urls": [
+      "https://nepaldesk.com/festival-event/krishna-janmashtami",
+      "https://kathmandupost.com/visual-stories/2019/08/23/here-is-how-nepalis-celebrated-krishna-janmashtami-and-gaura",
+      "https://commons.wikimedia.org/wiki/File:Krishna_Janamashtami.jpg"
+    ]
+  },
+  {
+    "name": "Saree",
+    "type": "single",
+    "base_price_npr": 14500,
+    "stock_quantity": 6,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "event": [
+        "marriage"
+      ],
+      "category": [
+        "saree",
+        "bridal",
+        "womenswear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_saree_look_for_girl.jpg",
+        "alt": "Red bridal saree (reference)"
+      }
+    ],
+    "sku": "marriage-saree-women-classic-red",
+    "relevance_note": "Wedding/formal ceremony product; event-driven rather than festival-driven.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Bridal Saree Set",
+    "type": "package",
+    "base_price_npr": 18900,
+    "stock_quantity": 3,
+    "tags": {
+      "caste": [
+        "newar"
+      ],
+      "region": [
+        "hilly",
+        "kathmandu-valley"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "event": [
+        "marriage"
+      ],
+      "category": [
+        "newari-dress",
+        "bridal",
+        "package"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Haku_patasi.jpg",
+        "alt": "Newari bridal reference"
+      }
+    ],
+    "sku": "newari-bridal-saree-set-women-newar",
+    "relevance_note": "Wedding/formal ceremony product; event-driven rather than festival-driven.",
+    "source_urls": [
+      "https://english.onlinekhabar.com/haku-patasi-traditional-wear-nepal.html",
+      "https://www.newar.com.np/newar-traditional-clothing/",
+      "https://imagepasal.com/photo/traditional-newari-dress-haku-patasi/"
+    ]
+  },
+  {
+    "name": "Daura Suruwal",
+    "type": "single",
+    "base_price_npr": 15500,
+    "stock_quantity": 4,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "event": [
+        "marriage"
+      ],
+      "category": [
+        "daura-suruwal",
+        "formal",
+        "menswear"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Daura_Suruwal_by_Mahalaxmi_Silwal.jpg",
+        "alt": "Daura Suruwal (reference)"
+      }
+    ],
+    "sku": "marriage-daura-suruwal-men-premium",
+    "relevance_note": "Wedding/formal ceremony product; event-driven rather than festival-driven.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Dhaka Topi",
+    "type": "single",
+    "base_price_npr": 1900,
+    "stock_quantity": 15,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "men"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "event": [
+        "marriage"
+      ],
+      "category": [
+        "topi",
+        "dhaka-topi",
+        "formal"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Nepali_Dhaka_Topi_in_folded_position.jpg",
+        "alt": "Dhaka Topi"
+      }
+    ],
+    "sku": "dhaka-topi-men-wedding-edition",
+    "relevance_note": "Wedding/formal ceremony product; event-driven rather than festival-driven.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Shawl",
+    "type": "single",
+    "base_price_npr": 2200,
+    "stock_quantity": 18,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "event": [
+        "marriage"
+      ],
+      "category": [
+        "shawl",
+        "formal",
+        "accessory"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shawl_MET_1979.346.199.jpg",
+        "alt": "Formal shawl (reference)"
+      }
+    ],
+    "sku": "wedding-shawl-unisex",
+    "relevance_note": "Wedding/formal ceremony product; event-driven rather than festival-driven.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Kurta Suruwal",
+    "type": "single",
+    "base_price_npr": 4800,
+    "stock_quantity": 12,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "kids"
+      ],
+      "age_group": [
+        "kids"
+      ],
+      "event": [
+        "pasni"
+      ],
+      "category": [
+        "kids-wear",
+        "traditional"
+      ]
+    },
+    "images": [],
+    "sku": "pasni-kurta-suruwal-kids-unisex",
+    "relevance_note": "Child ceremony wear; relevant to Pasni and family ceremonies rather than a seasonal festival.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Dhaka Topi",
+    "type": "single",
+    "base_price_npr": 900,
+    "stock_quantity": 25,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "kids",
+        "boys"
+      ],
+      "age_group": [
+        "kids"
+      ],
+      "event": [
+        "pasni"
+      ],
+      "category": [
+        "kids-wear",
+        "topi",
+        "dhaka-topi"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Nepali_Dhaka_Topi_in_folded_position.jpg",
+        "alt": "Dhaka Topi (reference)"
+      }
+    ],
+    "sku": "pasni-dhaka-topi-kids",
+    "relevance_note": "Child ceremony wear; relevant to Pasni and family ceremonies rather than a seasonal festival.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Kurta Suruwal",
+    "type": "single",
+    "base_price_npr": 6900,
+    "stock_quantity": 9,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "dashain-vijaya-dashami"
+      ],
+      "category": [
+        "dashain",
+        "kurta-suruwal",
+        "womenswear"
+      ]
+    },
+    "images": [],
+    "sku": "dashain-women-kurta-suruwal-women",
+    "relevance_note": "Festival dress option for Dashain tika/family visits; broad community relevance, not caste-specific.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Kurta",
+    "type": "single",
+    "base_price_npr": 5400,
+    "stock_quantity": 12,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "festival": [
+        "tihar-laxmi-puja",
+        "tihar-bhai-tika"
+      ],
+      "category": [
+        "tihar",
+        "kurta",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyjama_kurta.jpg",
+        "alt": "Kurta (reference)"
+      }
+    ],
+    "sku": "tihar-deusi-bhailo-kurta-unisex",
+    "relevance_note": "Kurta for Tihar social visits and Deusi-Bhailo; broad community relevance.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "White Kurta",
+    "type": "single",
+    "base_price_npr": 4100,
+    "stock_quantity": 14,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "buddha-jayanti"
+      ],
+      "category": [
+        "kurta",
+        "modest",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyjama_kurta.jpg",
+        "alt": "White kurta (reference)"
+      }
+    ],
+    "sku": "buddha-jayanti-white-kurta-unisex",
+    "relevance_note": "Modest white kurta for Buddha Jayanti observance; broad Buddhist/devotional relevance.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Cholo + Phariya + Ghalek Set",
+    "type": "package",
+    "base_price_npr": 14900,
+    "stock_quantity": 4,
+    "tags": {
+      "caste": [
+        "gurung"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "tamu-lhosar"
+      ],
+      "category": [
+        "lhosar",
+        "cultural-dress",
+        "package"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gurung_Tamu_Lhosar_2018_03.jpg",
+        "alt": "Gurung dress (reference)"
+      }
+    ],
+    "sku": "gurung-women-set-tamu-lhosar-cholo-phariya-ghalek",
+    "relevance_note": "Gurung women cultural attire; strongly relevant to Tamu Lhosar and Gurung community events.",
+    "source_urls": [
+      "https://www.ecs.com.np/festival/tamu-lhosar-new-year-of-the-gurungs",
+      "https://www.wondersofnepal.com/tamu-lhosar/"
+    ]
+  },
+  {
+    "name": "Sweater",
+    "type": "single",
+    "base_price_npr": 2900,
+    "stock_quantity": 20,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "festival": [
+        "christmas"
+      ],
+      "category": [
+        "christmas",
+        "winter",
+        "sweater"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sweater_wiki.jpg",
+        "alt": "Sweater (reference)"
+      }
+    ],
+    "sku": "christmas-sweater-unisex",
+    "relevance_note": "Christmas/winter themed product for Christmas season.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "name": "Chuba Set",
+    "type": "package",
+    "base_price_npr": 16800,
+    "stock_quantity": 5,
+    "tags": {
+      "caste": [
+        "lama",
+        "sherpa"
+      ],
+      "region": [
+        "himalayan"
+      ],
+      "gender": [
+        "men",
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "sonam-lhosar",
+        "gyalpo-lhosar",
+        "buddha-jayanti"
+      ],
+      "category": [
+        "buddhist",
+        "cultural-dress",
+        "package",
+        "traditional"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Getting%20ready%20for%20Losar.jpg",
+        "alt": "Tibetan dress (reference)"
+      }
+    ],
+    "sku": "tibetan-chuba-lama-set-unisex",
+    "relevance_note": "Himalayan/Buddhist chuba-style attire; relevant to Sonam/Gyalpo Lhosar and Lama/Sherpa community occasions.",
+    "source_urls": [
+      "https://www.tamangbuddhist.org.np/tamang-traditional-attire/",
+      "https://commons.wikimedia.org/wiki/File:Sonam_Lhosar_Portrait.jpg"
+    ]
+  },
+  {
+    "name": "Rudraksha Mala",
+    "type": "single",
+    "base_price_npr": 650,
+    "stock_quantity": 40,
+    "tags": {
+      "caste": [
+        "all"
+      ],
+      "region": [
+        "all"
+      ],
+      "gender": [
+        "all"
+      ],
+      "age_group": [
+        "teen",
+        "adult"
+      ],
+      "festival": [
+        "shivaratri"
+      ],
+      "category": [
+        "ritual",
+        "accessory",
+        "rudraksha"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rudraksha_mala.jpg",
+        "alt": "Rudraksha mala (reference)"
+      }
+    ],
+    "sku": "shivaratri-rudraksha-mala-accessory",
+    "relevance_note": "Devotional accessory associated with Shiva worship and Maha Shivaratri.",
+    "source_urls": [
+      "https://commons.wikimedia.org/"
+    ]
+  },
+  {
+    "sku": "tamang-lhosar-cultural-dress-set",
+    "name": "Tamang Cultural Dress Set",
+    "type": "package",
+    "base_price_npr": 14200,
+    "stock_quantity": 5,
+    "tags": {
+      "caste": [
+        "tamang"
+      ],
+      "region": [
+        "hilly",
+        "himalayan"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "sonam-lhosar"
+      ],
+      "category": [
+        "cultural-dress",
+        "traditional",
+        "package",
+        "lhosar"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sonam%20Lhosar%20Portrait.jpg",
+        "alt": "Traditional dress during Sonam Lhosar"
+      }
+    ],
+    "relevance_note": "Tamang cultural dress for Sonam Lhosar and Tamang community celebrations.",
+    "source_urls": [
+      "https://www.tamangbuddhist.org.np/tamang-traditional-attire/",
+      "https://commons.wikimedia.org/wiki/File:Sonam_Lhosar_Portrait.jpg"
+    ]
+  },
+  {
+    "sku": "kirat-sakela-cultural-dress-set",
+    "name": "Kirat Sakela Cultural Dress Set",
+    "type": "package",
+    "base_price_npr": 13800,
+    "stock_quantity": 4,
+    "tags": {
+      "caste": [
+        "rai",
+        "kirat"
+      ],
+      "region": [
+        "hilly"
+      ],
+      "gender": [
+        "women"
+      ],
+      "age_group": [
+        "adult"
+      ],
+      "festival": [
+        "ubhauli-parwa",
+        "udhauli-parwa"
+      ],
+      "category": [
+        "cultural-dress",
+        "traditional",
+        "package",
+        "sakela"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirat%20Rai%20ethnic%20womens%20in%20Sakela%20Ubhauli%20festival.jpg",
+        "alt": "Kirat Rai women in Sakela Ubhauli festival attire"
+      }
+    ],
+    "relevance_note": "Kirat/Rai cultural dress for Sakela-related Ubhauli and Udhauli community festivals.",
+    "source_urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kirat%20Rai%20ethnic%20womens%20in%20Sakela%20Ubhauli%20festival.jpg"
+    ]
+  }
+]

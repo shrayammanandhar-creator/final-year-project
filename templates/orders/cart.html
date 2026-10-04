@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}NepWears | Cart{% endblock %}
+
+{% block content %}
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="mb-0">Shopping cart</h3>
+    <div class="text-muted small">
+      {% if user.is_authenticated %}
+        Signed in as {{ user.username }}
+      {% else %}
+        You can browse and add items. Sign in when you confirm the order.
+      {% endif %}
+    </div>
+  </div>
+
+  {% if user.is_authenticated %}
+    {% with cart_items=items %}
+      {% include "orders/partials/cart_table.html" with cart_items=cart_items total=order.total_price total_npr=order.total_price_npr %}
+    {% endwith %}
+  {% else %}
+    {% with cart_items=items %}
+      {% include "orders/partials/cart_table.html" with cart_items=cart_items total=total_price total_npr=total_price_npr %}
+    {% endwith %}
+  {% endif %}
+
+  <div class="row g-3 mt-3">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="fw-semibold">Shipping estimate</div>
+          <div class="text-muted small">International delivery estimates are confirmed after address review.</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="fw-semibold">Easy size confirmation</div>
+          <div class="text-muted small">We can verify measurements before dispatch for traditional outfits.</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="fw-semibold">Payment safety</div>
+          <div class="text-muted small">Final payment details are shared only after the order is confirmed.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-3 d-flex justify-content-end gap-2">
+    <a class="btn btn-outline-dark" href="{% url 'products:list' %}">Continue shopping</a>
+    {% if user.is_authenticated %}
+      <form method="post" action="{% url 'orders:checkout' %}" class="d-inline">
+        {% csrf_token %}
+        <button class="btn btn-warning" type="submit">Confirm order</button>
+      </form>
+    {% else %}
+      <a class="btn btn-warning" href="{% url 'users:login' %}?next={% url 'orders:checkout' %}">Sign in to confirm</a>
+      <a class="btn btn-outline-secondary" href="{% url 'users:signup' %}?next={% url 'orders:checkout' %}">Create account</a>
+    {% endif %}
+  </div>
+
+  <script>
+    (function () {
+      document.addEventListener("click", (e) => {
+        const btn = e.target.closest("button[data-nw-qty-delta]");
+        if (!btn) return;
+        const form = btn.closest("form");
+        if (!form) return;
+        const input = form.querySelector("input[name='quantity']");
+        if (!input) return;
+        const delta = parseInt(btn.getAttribute("data-nw-qty-delta") || "0", 10);
+        const current = parseInt(input.value || "0", 10);
+        const next = Math.max(0, Math.min(99, current + delta));
+        input.value = String(next);
+      });
+    })();
+  </script>
+{% endblock %}

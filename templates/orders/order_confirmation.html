@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}NepWears | Order Confirmation{% endblock %}
+
+{% block content %}
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Order confirmed</h3>
+      <p class="text-muted mb-1">Order ID: <strong>#{{ order.id }}</strong></p>
+      <p class="text-muted mb-4">Placed at: {{ order.order_date }}</p>
+
+      <h5>Items</h5>
+      <ul class="list-group mb-3">
+        {% for item in order.items.all %}
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>{{ item.quantity }} × {{ item.product.name }}</span>
+            <span class="fw-semibold">{{ order.currency }} {{ item.line_total }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class="d-flex justify-content-between">
+        <span class="fw-semibold">Total</span>
+        <span class="fw-bold">{{ order.currency }} {{ order.total_price }}</span>
+      </div>
+
+      <div class="alert alert-secondary mt-4 mb-0">
+        <div class="fw-semibold">Next steps</div>
+        <div class="small">We will confirm shipping address, sizing, and payment details before dispatch.</div>
+      </div>
+
+      <div class="mt-4">
+        <a class="btn btn-warning" href="{% url 'products:list' %}">Continue shopping</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
